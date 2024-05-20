@@ -35,7 +35,7 @@
 /* ==============================================================
 // Custom button
 // =============================================================*/
-.button {
+.btn {
     font-family: Sofia Pro;
     font-size: 28px;
     font-weight: 400;
@@ -45,7 +45,7 @@
     padding: 14px 25px;
 }
 
-.button--default {
+.btn--default {
     background-color: var(--light-gray);
     color: var(--dark-blue);
 }
