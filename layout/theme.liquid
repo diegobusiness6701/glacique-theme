@@ -249,6 +249,42 @@
           font-size: 1.6rem;
         }
       }
+
+      @font-face {
+        font-family: 'Sofia Pro';
+        src: url('{{  'Sofia Pro Regular.eot' | asset_url }}'); /* IE9 Compat Modes */
+        src: url('{{ 'Sofia Pro Regular.eot' | asset_url }}') format('embedded-opentype'), /* IE6-IE8 */
+            url('{{ 'Sofia Pro Regular.woff' |  asset_url }}') format('woff'), /* Modern Browsers */
+            url('{{ 'Sofia Pro Regular.ttf' | asset_url }}')  format('truetype'), /* Safari, Android, iOS */
+            url('{{  'Sofia Pro Regular.svg' | asset_url }}') format('svg'); /* Legacy iOS */
+
+        font-style:   normal;
+        font-weight:  400;
+      }
+
+      @font-face {
+        font-family: 'Sofia Pro';
+        src: url('{{  'Sofia Pro Light.eot' | asset_url }}'); /* IE9 Compat Modes */
+        src: url('{{ 'Sofia Pro Light.eot' | asset_url }}') format('embedded-opentype'), /* IE6-IE8 */
+            url('{{ 'Sofia Pro Light.woff' |  asset_url }}') format('woff'), /* Modern Browsers */
+            url('{{ 'Sofia Pro Light.ttf' | asset_url }}')  format('truetype'), /* Safari, Android, iOS */
+            url('{{  'Sofia Pro Light.svg' | asset_url }}') format('svg'); /* Legacy iOS */
+
+        font-style:   normal;
+        font-weight:  200;
+      }
+
+      @font-face {
+        font-family: 'Sofia Pro';
+        src: url('{{  'Sofia Pro Bold.eot' | asset_url }}'); /* IE9 Compat Modes */
+        src: url('{{ 'Sofia Pro Bold.eot' | asset_url }}') format('embedded-opentype'), /* IE6-IE8 */
+            url('{{ 'Sofia Pro Bold.woff' |  asset_url }}') format('woff'), /* Modern Browsers */
+            url('{{ 'Sofia Pro Bold.ttf' | asset_url }}')  format('truetype'), /* Safari, Android, iOS */
+            url('{{  'Sofia Pro Bold.svg' | asset_url }}') format('svg'); /* Legacy iOS */
+
+        font-style:   normal;
+        font-weight:  800;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
