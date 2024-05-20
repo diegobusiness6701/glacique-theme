@@ -3,6 +3,7 @@
     --dark-blue: #0E1B4D;
     --light-gray: #EFF0F5;
     --light-blue: #D7F1F6;
+    --white: #fff;
 }
 
 .header-wrapper {
@@ -28,5 +29,23 @@
 }
 
 .list-menu--inline {
-    gap: 74px;
+    gap: 50px;
+}
+
+/* ==============================================================
+// Custom button
+// =============================================================*/
+.button {
+    font-family: Sofia Pro;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    border-radius: 60px;
+    padding: 14px 25px;
+}
+
+.button--default {
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
 }
