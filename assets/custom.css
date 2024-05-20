@@ -26,3 +26,7 @@
     text-align: left;
     text-decoration: none;
 }
+
+.list-menu--inline {
+    gap: 74px;
+}
