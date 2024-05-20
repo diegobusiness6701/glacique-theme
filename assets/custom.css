@@ -19,6 +19,7 @@
 
 .header--middle-left {
     grid-template-columns: auto 1fr auto;
+    margin: 0 auto;
 }
 
 .header--middle-left .header__inline-menu {
