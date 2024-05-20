@@ -1,0 +1,10 @@
+:root {
+    --gray-blue: #4770DB;
+    --dark-blue: #0E1B4D;
+    --light-gray: #EFF0F5;
+    --light-blue: #D7F1F6;
+}
+
+.header-wrapper {
+    background: var(--dark-blue);
+}
