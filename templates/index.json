@@ -133,9 +133,9 @@
         "brand_kdrjUj"
       ],
       "settings": {
-        "background": "",
+        "background": "#d7f1f6",
         "heading": "As <strong>Seen<\/strong> In",
-        "heading_color": ""
+        "heading_color": "#0e1b4d"
       }
     },
     "rich_text": {
