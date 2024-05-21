@@ -39,7 +39,7 @@
         "feature_yjQDny": {
           "type": "feature",
           "settings": {
-            "icon": "drop-check",
+            "icon": "zoom-check",
             "size": 36,
             "description": "Dermatologically Tested for Sensitive Skin",
             "color": "#0E1B4D"
@@ -48,7 +48,7 @@
         "feature_eAETJT": {
           "type": "feature",
           "settings": {
-            "icon": "drop-check",
+            "icon": "eco-friendly",
             "size": 36,
             "description": "Eco-Friendly and Cruelty-Free Beauty Solutions",
             "color": "#0E1B4D"
