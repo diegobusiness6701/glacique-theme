@@ -175,3 +175,23 @@
     text-transform: uppercase;
     font-weight: 800;
 }
+
+/* ========================================================
+// Brand section
+// =======================================================*/
+.brand-blocks {
+    gap: 10rem;
+}
+
+.brand-blocks .brand-item {
+    align-items: center;
+}
+
+.brand-blocks .brand-item span {
+    font-family: Sofia Pro;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center
+}
