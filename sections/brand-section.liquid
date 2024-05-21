@@ -33,16 +33,18 @@
 
 <div
   id="Brand-{{ section.id }}"
-  style="display: flex; background: {{ section.settings.background }}; padding-bottom: 2.5rem;"
+  style="display: flex; background: {{ section.settings.background }};"
   class="brand-section flex flex-column"
 >
   <h1 class="heading" style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h1>
-  <div class="brand-blocks">
+  <div class="brand-blocks flex">
     {%- for block in section.blocks -%}
       {% case block.type %}
         {% when 'brand' %}
           <div class="brand-item flex flex-column">
-            <img src="{{ block.settings.image | image_url }}">
+            {%- if block.settings.image != blank -%}
+              <img src="{{ block.settings.image | image_url }}">
+            {%- endif -%}
             <span>{{ block.settings.description }}</span>
           </div>
       {% endcase %}

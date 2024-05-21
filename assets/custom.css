@@ -179,12 +179,21 @@
 /* ========================================================
 // Brand section
 // =======================================================*/
+.brand-section {
+    align-items: center;
+    gap: 8rem;
+    padding: 10rem 8rem;
+}
+
 .brand-blocks {
     gap: 10rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .brand-blocks .brand-item {
     align-items: center;
+    gap: 1rem;
 }
 
 .brand-blocks .brand-item span {
