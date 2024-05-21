@@ -32,7 +32,7 @@
           "settings": {
             "icon": "drop-check",
             "size": 36,
-            "description": "",
+            "description": "Infused with Natural Hyaluronic Acid for Deep Hydration",
             "color": "#0E1B4D"
           }
         },
@@ -41,7 +41,7 @@
           "settings": {
             "icon": "drop-check",
             "size": 36,
-            "description": "",
+            "description": "Dermatologically Tested for Sensitive Skin",
             "color": "#0E1B4D"
           }
         },
@@ -50,7 +50,7 @@
           "settings": {
             "icon": "drop-check",
             "size": 36,
-            "description": "Infused with Natural Hyaluronic Acid for Deep Hydration",
+            "description": "Eco-Friendly and Cruelty-Free Beauty Solutions",
             "color": "#0E1B4D"
           }
         }
