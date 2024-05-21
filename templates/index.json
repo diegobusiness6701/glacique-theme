@@ -213,22 +213,6 @@
             "description": "Hydrates and soothes <br>irritated skin"
           }
         },
-        "feature_znGHgC": {
-          "type": "feature",
-          "settings": {
-            "icon": "lavender",
-            "heading": "Lavender + Hyaluronic Acid",
-            "description": "Calms skin and reduces <br>signs of stress"
-          }
-        },
-        "feature_nM3gty": {
-          "type": "feature",
-          "settings": {
-            "icon": "aloe",
-            "heading": "Aloe Vera + Hyaluronic Acid",
-            "description": "Heals and hydrates sun-<br>damaged skin"
-          }
-        },
         "feature_GtTgpR": {
           "type": "feature",
           "settings": {
@@ -237,12 +221,28 @@
             "description": "Brightens and fights <br>signs of aging"
           }
         },
+        "feature_znGHgC": {
+          "type": "feature",
+          "settings": {
+            "icon": "lavender",
+            "heading": "Lavender + Hyaluronic Acid",
+            "description": "Calms skin and reduces <br>signs of stress"
+          }
+        },
         "feature_fAWQUj": {
           "type": "feature",
           "settings": {
             "icon": "honey",
             "heading": "Honey + Hyaluronic Acid",
             "description": "Nourishes and promotes a <br>clear complexion"
+          }
+        },
+        "feature_nM3gty": {
+          "type": "feature",
+          "settings": {
+            "icon": "aloe",
+            "heading": "Aloe Vera + Hyaluronic Acid",
+            "description": "Heals and hydrates sun-<br>damaged skin"
           }
         },
         "feature_FXYPgN": {
@@ -261,14 +261,14 @@
         "slide_Wfng8b",
         "slide_UXEx99",
         "feature_ECaxzd",
-        "feature_znGHgC",
-        "feature_nM3gty",
         "feature_GtTgpR",
+        "feature_znGHgC",
         "feature_fAWQUj",
+        "feature_nM3gty",
         "feature_FXYPgN"
       ],
       "settings": {
-        "title": "Glacique Sheet Mask Ingredients and <br>Skin <strong>Benefits<\/strong>",
+        "title": "Glacique Sheet Mask Ingredients and <br> Skin <strong>Benefits<\/strong>",
         "heading_color": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
