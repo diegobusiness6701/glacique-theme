@@ -3,34 +3,6 @@
     "custom_banner_qwxBzy": {
       "type": "custom-banner",
       "blocks": {
-        "heading_Rgphhf": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image banner",
-            "heading_size": "h1"
-          }
-        },
-        "text_j3V3nG": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_EPkQwc": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        },
         "review_rating_CabXB4": {
           "type": "review-rating",
           "settings": {
@@ -40,9 +12,6 @@
         }
       },
       "block_order": [
-        "heading_Rgphhf",
-        "text_j3V3nG",
-        "buttons_EPkQwc",
         "review_rating_CabXB4"
       ],
       "settings": {
