@@ -55,7 +55,7 @@
 
 <div
   id="Custom-banner-{{ section.id }}"
-  style="display: block;"
+  style="display: flex;"
   class="custom-banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   <div class="w-half">
@@ -93,10 +93,20 @@
     <div class="custom-banner--discount-wrapper"><strong>Discount</strong> offer!</div>
   </div>
   <div class="custom-banner--review w-half flex flex-column">
-    {%- for block in section.settings.block -%}
+    {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'review-rating' -%}
-          <div class="review-rating flex">+{{ block.settings.number_of_clients }} Happy clients</div>
+          <div class="review-rating flex">
+            {%- render 'star-rating',
+              rating: block.settings.rating,
+              star_fill: block.settings.star_fill,
+              star_empty: block.settings.star_empty,
+              star_size: block.settings.star_size
+            -%}
+            <span class="review--clients-number">
+              <strong class="text-gray-blue">+{{ block.settings.number_of_clients }}</strong> Happy clients
+            </span>
+          </div>
       {%- endcase -%}
     {%- endfor -%}
   </div>
@@ -317,6 +327,28 @@
           "id": "number_of_clients",
           "label": "Number of clients",
           "default": "40,000"
+        },
+        {
+          "type": "range",
+          "id": "star_size",
+          "label": "Star size",
+          "step": 2,
+          "max": 60,
+          "min": 10,
+          "unit": "px",
+          "default": 42
+        },
+        {
+          "id": "star_fill",
+          "type": "color",
+          "label": "Star fill color",
+          "default": "#1565C0"
+        },
+        {
+          "id": "star_empty",
+          "type": "color",
+          "label": "Star empty color",
+          "default": "#c6c6c6"
         }
       ]
     },

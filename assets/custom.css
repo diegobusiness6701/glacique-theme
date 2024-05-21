@@ -41,6 +41,13 @@
     width: 100%;
 }
 
+/* ==================================================================
+// Text
+// =================================================================*/
+.text-gray-blue {
+    color: var(--gray-blue);
+}
+
 .header-wrapper {
     background: var(--dark-blue);
 }
@@ -104,4 +111,21 @@
     background-color: var(--dark-blue);
     border-bottom-right-radius: 60px;
     color: var(--white);
+}
+
+.custom-banner--review {
+    padding: 6rem 12rem;
+}
+
+.review--clients-number {
+    font-family: Sofia Pro;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+}
+
+.review-rating {
+    gap: 20px;
+    align-items: center;
 }
