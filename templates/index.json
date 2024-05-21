@@ -142,7 +142,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Our <strong>science backed<\/strong> sheet <br>masks",
-        "heading_color": "#0E1B4D",
+        "heading_color": "#0e1b4d",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
@@ -268,8 +268,8 @@
         "feature_FXYPgN"
       ],
       "settings": {
-        "title": "Glacique Sheet Mask Ingredients and Skin <strong>Benefits<\/strong>",
-        "heading_color": "#fff",
+        "title": "Glacique Sheet Mask Ingredients and <br>Skin <strong>Benefits<\/strong>",
+        "heading_color": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
       }
