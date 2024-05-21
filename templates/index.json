@@ -98,7 +98,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/womens-health-logo-664c66cad40ba.webp",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "brand_gyB7E3": {
@@ -106,7 +106,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/logo-attbmn5hwo6j64dte-664c66cbbf780.webp",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "brand_8a7L3Q": {
@@ -114,7 +114,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/business-insider-664c66cc14c1a.webp",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "brand_kdrjUj": {
@@ -122,7 +122,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/the-times-masthead-664c66cd575c5.webp",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         }
       },
@@ -136,36 +136,6 @@
         "background": "#d7f1f6",
         "heading": "As <strong>Seen<\/strong> In",
         "heading_color": "#0e1b4d"
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
       }
     },
     "featured_collection": {
@@ -306,7 +276,6 @@
   "order": [
     "custom_banner_qwxBzy",
     "brand_section_kXUnLj",
-    "rich_text",
     "featured_collection",
     "collage",
     "video",
