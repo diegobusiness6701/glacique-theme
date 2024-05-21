@@ -77,7 +77,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/beautiful-woman-using-glacique-mask.png",
-        "background": "",
+        "background": "#d7f1f6",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
