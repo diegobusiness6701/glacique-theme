@@ -204,6 +204,54 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/slide5-664cfffacda70.webp"
           }
+        },
+        "feature_ECaxzd": {
+          "type": "feature",
+          "settings": {
+            "icon": "cucumber",
+            "heading": "Cucumber + Hyaluronic Acid",
+            "description": "Hydrates and soothes <br>irritated skin"
+          }
+        },
+        "feature_znGHgC": {
+          "type": "feature",
+          "settings": {
+            "icon": "cucumber",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "feature_nM3gty": {
+          "type": "feature",
+          "settings": {
+            "icon": "cucumber",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "feature_GtTgpR": {
+          "type": "feature",
+          "settings": {
+            "icon": "cucumber",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "feature_fAWQUj": {
+          "type": "feature",
+          "settings": {
+            "icon": "cucumber",
+            "heading": "",
+            "description": ""
+          }
+        },
+        "feature_FXYPgN": {
+          "type": "feature",
+          "settings": {
+            "icon": "cucumber",
+            "heading": "",
+            "description": ""
+          }
         }
       },
       "block_order": [
@@ -211,10 +259,16 @@
         "slide_fEP77B",
         "slide_pnaHE8",
         "slide_Wfng8b",
-        "slide_UXEx99"
+        "slide_UXEx99",
+        "feature_ECaxzd",
+        "feature_znGHgC",
+        "feature_nM3gty",
+        "feature_GtTgpR",
+        "feature_fAWQUj",
+        "feature_FXYPgN"
       ],
       "settings": {
-        "title": "Featured carousel",
+        "title": "Glacique Sheet Mask Ingredients and Skin <strong>Benefits<\/strong>",
         "heading_color": "#fff",
         "padding_top": 36,
         "padding_bottom": 36
