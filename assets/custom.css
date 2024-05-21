@@ -13,6 +13,30 @@
     width: calc(100vw - 200px);
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+    flex-direction: column-reverse;
+}
+
+.w-1\2 {
+    width: 50%;
+}
+
 .header-wrapper {
     background: var(--dark-blue);
 }
@@ -56,4 +80,24 @@
 .btn--default {
     background-color: var(--light-gray);
     color: var(--dark-blue);
+}
+
+/* ==============================================================
+// Custom banner
+// =============================================================*/
+.custom-banner__media {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-banner--discount-wrapper {
+    font-family: Sofia Pro;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 42px;
+    letter-spacing: 0.01em;
+    padding: 36px 106px 36px auto;
+    background-color: var(--dark-blue);
+    border-bottom-right-radius: 60px;
 }
