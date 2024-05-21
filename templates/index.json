@@ -7,12 +7,23 @@
           "type": "review-rating",
           "settings": {
             "rating": 4.5,
-            "number_of_clients": "40,000"
+            "number_of_clients": "40,000",
+            "star_size": 42,
+            "star_fill": "#1565C0",
+            "star_empty": "#c6c6c6"
+          }
+        },
+        "heading_hFY9XB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
           }
         }
       },
       "block_order": [
-        "review_rating_CabXB4"
+        "review_rating_CabXB4",
+        "heading_hFY9XB"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/beautiful-woman-using-glacique-mask.png",
