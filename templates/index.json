@@ -97,7 +97,7 @@
           "type": "brand",
           "settings": {
             "image": "shopify:\/\/shop_images\/womens-health-logo-664c66cad40ba.webp",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
             "color": "#0E1B4D"
           }
         },
@@ -105,7 +105,7 @@
           "type": "brand",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo-attbmn5hwo6j64dte-664c66cbbf780.webp",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
             "color": "#0E1B4D"
           }
         },
@@ -113,7 +113,7 @@
           "type": "brand",
           "settings": {
             "image": "shopify:\/\/shop_images\/business-insider-664c66cc14c1a.webp",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
             "color": "#0E1B4D"
           }
         },
@@ -121,7 +121,7 @@
           "type": "brand",
           "settings": {
             "image": "shopify:\/\/shop_images\/the-times-masthead-664c66cd575c5.webp",
-            "description": "",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed",
             "color": "#0E1B4D"
           }
         }
