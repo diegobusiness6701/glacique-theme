@@ -281,28 +281,28 @@
           "type": "feature",
           "settings": {
             "icon": "box-cancel",
-            "description": "Cancel anytime"
+            "description": "Cancel<br> anytime"
           }
         },
         "feature_kLNqM8": {
           "type": "feature",
           "settings": {
             "icon": "pinned-deals",
-            "description": "Early access to deals and drops"
+            "description": "Early access to <br>deals and drops"
           }
         },
         "feature_9V9CAD": {
           "type": "feature",
           "settings": {
             "icon": "delivery",
-            "description": "Free Delivery"
+            "description": "Free <br>Delivery"
           }
         },
         "feature_B9zGP8": {
           "type": "feature",
           "settings": {
             "icon": "save-money",
-            "description": "Save 20% on every order"
+            "description": "Save 20% on <br>every order"
           }
         }
       },
