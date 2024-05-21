@@ -276,6 +276,42 @@
     },
     "subscription_block_M7cAqH": {
       "type": "subscription-block",
+      "blocks": {
+        "feature_WVgQe3": {
+          "type": "feature",
+          "settings": {
+            "icon": "box-cancel",
+            "description": "Cancel anytime"
+          }
+        },
+        "feature_kLNqM8": {
+          "type": "feature",
+          "settings": {
+            "icon": "pinned-deals",
+            "description": "Early access to deals and drops"
+          }
+        },
+        "feature_9V9CAD": {
+          "type": "feature",
+          "settings": {
+            "icon": "delivery",
+            "description": "Free Delivery"
+          }
+        },
+        "feature_B9zGP8": {
+          "type": "feature",
+          "settings": {
+            "icon": "save-money",
+            "description": "Save 20% on every order"
+          }
+        }
+      },
+      "block_order": [
+        "feature_WVgQe3",
+        "feature_kLNqM8",
+        "feature_9V9CAD",
+        "feature_B9zGP8"
+      ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/subscription-background.webp",
         "title": "<strong>Save<\/strong> 20% with subscribe & save",
