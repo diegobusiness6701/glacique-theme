@@ -17,14 +17,14 @@
           "type": "heading",
           "settings": {
             "heading": "<strong>Reveal<\/strong> your radiant self with <strong>glacique<\/strong>",
-            "heading_color": "#0E1B4D"
+            "heading_color": "#0e1b4d"
           }
         },
         "text_8ymfGd": {
           "type": "text",
           "settings": {
             "text": "Unveil a fresher, more vibrant you with our premium sheet masks. Each one is infused with nature’s best ingredients to hydrate, soothe, and revitalize your skin.",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "feature_CdfFLK": {
@@ -33,7 +33,7 @@
             "icon": "drop-check",
             "size": 36,
             "description": "Infused with Natural Hyaluronic Acid for Deep Hydration",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "feature_yjQDny": {
@@ -42,7 +42,7 @@
             "icon": "zoom-check",
             "size": 36,
             "description": "Dermatologically Tested for Sensitive Skin",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "feature_eAETJT": {
@@ -51,7 +51,7 @@
             "icon": "eco-friendly",
             "size": 36,
             "description": "Eco-Friendly and Cruelty-Free Beauty Solutions",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "buttons_kicL6h": {
@@ -88,6 +88,50 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "brand_section_kXUnLj": {
+      "type": "brand-section",
+      "blocks": {
+        "brand_t8qKR6": {
+          "type": "brand",
+          "settings": {
+            "description": "",
+            "color": "#0E1B4D"
+          }
+        },
+        "brand_gyB7E3": {
+          "type": "brand",
+          "settings": {
+            "description": "",
+            "color": "#0E1B4D"
+          }
+        },
+        "brand_8a7L3Q": {
+          "type": "brand",
+          "settings": {
+            "description": "",
+            "color": "#0E1B4D"
+          }
+        },
+        "brand_kdrjUj": {
+          "type": "brand",
+          "settings": {
+            "description": "",
+            "color": "#0E1B4D"
+          }
+        }
+      },
+      "block_order": [
+        "brand_t8qKR6",
+        "brand_gyB7E3",
+        "brand_8a7L3Q",
+        "brand_kdrjUj"
+      ],
+      "settings": {
+        "background": "",
+        "heading": "As <strong>Seen<\/strong> In",
+        "heading_color": ""
       }
     },
     "rich_text": {
@@ -257,6 +301,7 @@
   },
   "order": [
     "custom_banner_qwxBzy",
+    "brand_section_kXUnLj",
     "rich_text",
     "featured_collection",
     "collage",
