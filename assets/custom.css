@@ -86,11 +86,19 @@
     letter-spacing: 0.01em;
     border-radius: 60px;
     padding: 14px 25px;
+    text-decoration: none;
+    text-align: center;
+
 }
 
 .btn--default {
     background-color: var(--light-gray);
     color: var(--dark-blue);
+}
+
+.btn--gray-blue {
+    background-color: var(--gray-blue);
+    color: var(--white);
 }
 
 /* ==============================================================
@@ -114,7 +122,8 @@
 }
 
 .custom-banner--review {
-    padding: 6rem 12rem;
+    padding: 8rem 12rem;
+    gap: 3rem;
 }
 
 .review--clients-number {
@@ -136,6 +145,8 @@
     font-weight: 200;
     line-height: 70px;
     letter-spacing: 0.01em;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .description {
@@ -144,4 +155,23 @@
     font-weight: 400;
     line-height: 34px;
     letter-spacing: 0.01em;
+}
+
+.feature-item {
+    align-items: center;
+    gap: 1rem;
+}
+
+.feature-item_description {
+    font-family: Sofia Pro;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+}
+
+.custom-banner_btn {
+    padding: 1.5rem 7rem;
+    text-transform: uppercase;
+    font-weight: 800;
 }

@@ -55,7 +55,7 @@
 
 <div
   id="Custom-banner-{{ section.id }}"
-  style="display: flex;"
+  style="display: flex; background: {{ section.settings.background }}; padding-bottom: 2.5rem;"
   class="custom-banner--content-align-{{ section.settings.desktop_content_alignment }} banner--content-align-mobile-{{ section.settings.mobile_content_alignment }} banner--{{ section.settings.image_height }}{% if section.settings.stack_images_on_mobile and section.settings.image != blank %} banner--stacked{% endif %}{% if section.settings.image_height == 'adapt' and section.settings.image != blank %} banner--adapt{% endif %}{% if section.settings.show_text_below %} banner--mobile-bottom{%- endif -%}{% if section.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}"
 >
   <div class="w-half">
@@ -112,9 +112,16 @@
         {%- when 'text' -%}
           <span class="description" style="color: {{ block.settings.color }}">{{ block.settings.text }}</span>
         {%- when 'feature' -%}
-          <div class="feature flex">
-            {%- render 'icon-{{ block.settings.icon }}', color: block.settings.color, size: block.settings.size -%}
+          <div class="feature-item flex">
+            {%- render 'icon', icon: block.settings.icon, color: block.settings.color, size: block.settings.size -%}
+            <span class="feature-item_description" style="color: {{ block.settings.color }}">
+              {{- block.settings.description -}}
+            </span>
           </div>
+        {%- when 'buttons' -%}
+          {%- if block.settings.button_label_1 != blank -%}
+            <a href="#" class="custom-banner_btn btn btn--gray-blue">{{ block.settings.button_label_1 }}</a>
+          {%- endif -%}
       {%- endcase -%}
     {%- endfor -%}
   </div>
