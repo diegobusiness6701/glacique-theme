@@ -318,7 +318,9 @@
         "description": "Get regularly scheduled deliveries to your doorstep to ensure your skin is always radiant for less spend",
         "heading_color": "#0e1b4d",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "button_label": "START YOUR JOURNEY",
+        "button_url": "shopify:\/\/collections\/all"
       }
     },
     "collage": {
