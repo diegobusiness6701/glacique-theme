@@ -232,25 +232,25 @@
         "feature_GtTgpR": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "lemon",
+            "heading": "Vitamin C + Hyaluronic Acid",
+            "description": "Brightens and fights <br>signs of aging"
           }
         },
         "feature_fAWQUj": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "honey",
+            "heading": "Honey + Hyaluronic Acid",
+            "description": "Nourishes and promotes a <br>clear complexion"
           }
         },
         "feature_FXYPgN": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "leaf",
+            "heading": "Eco-Friendly and Ethical",
+            "description": "Sustainably sourced, cruelty-<br>free ingredients"
           }
         }
       },
