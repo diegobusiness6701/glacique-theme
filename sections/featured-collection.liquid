@@ -68,7 +68,10 @@
   >
     <div class="collection__title title-wrapper title-wrapper--no-top-margin page-width{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% endif %}{% if show_desktop_slider %} collection__title--desktop-slider{% endif %}">
       {%- if section.settings.title != blank -%}
-        <h2 class="heading {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        <h2
+          class="heading {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          style="color: {{ section.settings.heading_color }}"
+        >
           {{ section.settings.title }}
         </h2>
       {%- endif -%}
@@ -96,12 +99,17 @@
       >
         <li
           id="Slide-{{ section.id }}-first"
-          class="grid__item grid__item-first{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+          class="grid__item grid__item-first flex flex-column{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
-            style="--animation-order: 0;"
           {% endif %}
-        ></li>
+          style="background: {{ section.settings.first_slide_background }}; border-radius: 30px; --animation-order: 0;"
+        >
+          <span>{{ section.settings.first_slide_description }}</span>
+          <a class="btn btn--outline" href="{{ section.settings.first_slide_button_url }}">
+            {{- section.settings.first_slide_button_text -}}
+          </a>
+        </li>
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -152,32 +160,32 @@
         {%- endfor -%}
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
-        <div class="slider-buttons">
-          <button
-            type="button"
-            class="slider-button slider-button--prev"
-            name="previous"
-            aria-label="{{ 'general.slider.previous_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
+        <button
+          type="button"
+          class="slider-button slider-button--prev"
+          name="previous"
+          aria-label="{{ 'general.slider.previous_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          {% render 'icon-caret' %}
+        </button>
+        {% comment %}
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
             <span aria-hidden="true"> / </span>
             <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
             <span class="slider-counter--total">{{ products_to_display }}</span>
           </div>
-          <button
-            type="button"
-            class="slider-button slider-button--next"
-            name="next"
-            aria-label="{{ 'general.slider.next_slide' | t }}"
-            aria-controls="Slider-{{ section.id }}"
-          >
-            {% render 'icon-caret' %}
-          </button>
-        </div>
+        {% endcomment %}
+        <button
+          type="button"
+          class="slider-button slider-button--next"
+          name="next"
+          aria-label="{{ 'general.slider.next_slide' | t }}"
+          aria-controls="Slider-{{ section.id }}"
+        >
+          {% render 'icon-caret' %}
+        </button>
       {%- endif -%}
     </slider-component>
 
@@ -212,6 +220,12 @@
       "id": "title",
       "default": "Featured collection",
       "label": "t:sections.featured-collection.settings.title.label"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "default": "#0E1B4D",
+      "label": "Heading Color"
     },
     {
       "type": "select",
