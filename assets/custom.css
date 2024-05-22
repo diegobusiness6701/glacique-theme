@@ -288,3 +288,45 @@
     text-align: right;
     color: var(--dark-blue);
 }
+
+
+/* ====================================================
+// Custom Feature Carousel
+// ===================================================*/
+.feature-slide__heading {
+    position: absolute;
+    top: 80px;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+.slide__feature-wrapper {
+    position: absolute;
+    top: 25%;
+    z-index: 10;
+    width: 100%;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 50px;
+}
+
+.slide__feature-item__heading {
+    font-family: Sofia Pro;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: white;
+}
+
+.slide__feature-item__description {
+    font-family: Sofia Pro;
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: white;
+}
