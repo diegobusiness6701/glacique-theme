@@ -9,7 +9,7 @@
           "type": "text",
           "settings": {
             "image": "shopify:\/\/shop_images\/logo.png",
-            "heading": "Heading",
+            "heading": "",
             "subtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <\/p>"
           }
         },
