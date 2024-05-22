@@ -7,7 +7,6 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +20,10 @@
   }
 </style>
 <div
-  class="section-{{ section.id }}-padding swiper features-swiper scroll-trigger animate--fade-in"
+  class="section-{{ section.id }}-padding swiper features-swiper scroll-trigger animate--fade-in desktop-only"
   id="section-{{ section.id }}"
 >
-  <h1 class="feature-slide__heading heading" style="color: {{ section.settings.heading_color }}">
+  <h1 class="feature-slide__heading heading desktop-only" style="color: {{ section.settings.heading_color }}">
     {{ section.settings.title }}
   </h1>
 
@@ -36,22 +35,6 @@
     {%- endfor -%}
   </div>
 
-  <div class="swiper-wrapper mobile-only">
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'feature' -%}
-        <div class="swiper-slide">
-          <div
-            class="slide__feature-item flex flex-column"
-            style="gap: 1rem; {%- if modulo == 0 -%} align-items:end; text-align: right; {%- else -%} align-items:start; text-align: left; {%- endif -%}"
-          >
-            {% render 'icon', icon: block.settings.icon %}
-            <span class="slide__feature-item__heading">{{ block.settings.heading }}</span>
-            <span class="slide__feature-item__description">{{ block.settings.description }}</span>
-          </div>
-        </div>
-      {%- endif -%}
-    {%- endfor -%}
-  </div>
   <div class="swiper-pagination"></div>
 
   <div
@@ -75,9 +58,43 @@
     {%- endfor -%}
   </div>
 </div>
+<div
+  class="section-{{ section.id }}-padding swiper features-mobile-swiper scroll-trigger animate--fade-in mobile-only"
+  id="section-{{ section.id }}"
+  style="height: calc( 100vw / ({{ section.settings.mobile_background.width }} / {{ section.settings.mobile_background.height }})); background-size: contain; background-image: url('{{ section.settings.mobile_background |  image_url  }}')"
+>
+  <div
+    class="swiper-wrapper"
+  >
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'feature' -%}
+        <div class="swiper-slide">
+          <div
+            class="slide__feature-item flex flex-column"
+            style="position: absolute; bottom: 50px; gap: 1rem; {%- if modulo == 0 -%} align-items:center; text-align: center; {%- else -%} align-items:center; text-align: center; {%- endif -%}"
+          >
+            {% render 'icon', icon: block.settings.icon %}
+            <span class="slide__feature-item__heading">{{ block.settings.heading }}</span>
+            <span class="slide__feature-item__description">{{ block.settings.description }}</span>
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var swiper = new Swiper('.features-swiper', {
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+
+    var swiper2 = new Swiper('.features-mobile-swiper', {
       grabCursor: true,
       pagination: {
         el: '.swiper-pagination',
