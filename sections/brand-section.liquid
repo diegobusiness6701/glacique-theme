@@ -29,6 +29,10 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+
+  .brand-swiper .swiper-slide {
+    background: none;
+  }
 {%- endstyle -%}
 
 <div
@@ -37,7 +41,7 @@
   class="brand-section flex flex-column"
 >
   <h1 class="heading" style="color: {{ section.settings.heading_color }}">{{ section.settings.heading }}</h1>
-  <div class="brand-blocks flex">
+  <div class="brand-blocks flex desktop-only">
     {%- for block in section.blocks -%}
       {% case block.type %}
         {% when 'brand' %}
@@ -50,8 +54,33 @@
       {% endcase %}
     {%- endfor -%}
   </div>
+  <div class="brand-blocks mobile-only swiper brand-swiper">
+    <div class="swiper-wrapper">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'brand' -%}
+          <div class="swiper-slide flex flex-column">
+            {%- if block.settings.image != blank -%}
+              <img src="{{ block.settings.image | image_url }}" style="width: 205px; height: auto;">
+            {%- endif -%}
+            <span>{{ block.settings.description }}</span>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.brand-swiper', {
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Brand Section",

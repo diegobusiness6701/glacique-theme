@@ -36,6 +36,52 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  @media screen and (max-width: 749px) {
+    #Slide-{{ section.id }}-first {
+      padding: 2rem !important;
+    }
+    #Slide-{{ section.id }}-first span {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 13.83px;
+      letter-spacing: 0.01em;
+      text-align: justified;
+    }
+
+    #Slide-{{ section.id }}-first .btn {
+      font-family: Sofia Pro;
+      font-size: 9.44px;
+      font-weight: 400;
+      line-height: 11.47px;
+      letter-spacing: 0.01em;
+      display: block;
+      width: 100%;
+      padding: 5px 40px;
+    }
+
+    .card-product__title {
+      font-family: Sofia Pro;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 11.39px;
+      letter-spacing: 0.01em;
+      text-align: left;
+
+    }
+
+    .price-item {
+      font-size: 11px;
+    }
+
+    .card__information {
+      font-size: 9px;
+    }
+
+    .card-product__url {
+      font-size: 9px;
+    }
+  }
 {%- endstyle -%}
 
 {%- liquid
@@ -70,7 +116,7 @@
       {%- if section.settings.title != blank -%}
         <h2
           class="heading {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          style="color: {{ section.settings.heading_color }}"
+          style="color: {{ section.settings.heading_color }}; text-align: center;"
         >
           {{ section.settings.title }}
         </h2>
@@ -162,7 +208,7 @@
       {%- if show_mobile_slider or show_desktop_slider -%}
         <button
           type="button"
-          class="slider-button slider-button--prev"
+          class="slider-button slider-button--prev desktop-only"
           name="previous"
           aria-label="{{ 'general.slider.previous_slide' | t }}"
           aria-controls="Slider-{{ section.id }}"
@@ -179,7 +225,7 @@
         {% endcomment %}
         <button
           type="button"
-          class="slider-button slider-button--next"
+          class="slider-button slider-button--next desktop-only"
           name="next"
           aria-label="{{ 'general.slider.next_slide' | t }}"
           aria-controls="Slider-{{ section.id }}"

@@ -13,6 +13,19 @@
     width: calc(100vw - 200px);
 }
 
+@media screen and (max-width: 749px) {
+    .desktop-only {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+
 .flex {
     display: flex;
 }
