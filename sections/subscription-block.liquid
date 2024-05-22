@@ -37,19 +37,61 @@
   .subscription-feature-item--description {
     text-align: center;
   }
+
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} {
+      display: block;
+      height: calc(100vw / ({{ section.settings.mobile_background_image.width }} / {{ section.settings.mobile_background_image.height }}));
+      background-image: url('{{ section.settings.mobile_background_image | image_url  }}');
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding: 5rem 3rem;
+    }
+    .subscription-wrapper  {
+      width: 100%;
+      justify-content: start;
+      gap: 15px;
+    }
+    .subscription-wrapper .heading {
+      line-height: 40px;
+      text-align: center;
+    }
+    .subscription-wrapper .description {
+      font-size: 20px;
+      text-align: center !important;
+    }
+
+    .subscription-wrapper .btn {
+      width: 100%;
+    }
+
+    .subscription-features-swiper {
+      height: 250px;
+    }
+
+    .subscription-feature-item--description {
+      font-family: Sofia Pro;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.01em;
+      text-align: center;
+
+    }
+  }
 </style>
 <div
   class="section-{{ section.id }}-padding section-subscription scroll-trigger animate--fade-in"
   id="section-{{ section.id }}"
 >
   <div class="subscription-wrapper flex flex-column">
-    <h1 class="heading" style="color: {{ section.settings.heading_color }}; text-align: left;">
+    <h1 class="heading" style="color: {{ section.settings.heading_color }};">
       {{ section.settings.title }}
     </h1>
     <span class="description" style="color: {{ section.settings.heading_color }};">
       {{ section.settings.description }}
     </span>
-    <div class="subscription-features-block flex">
+    <div class="subscription-features-block flex desktop-only">
       {%- for block in section.blocks -%}
         <div class="subscription-feature--item flex flex-column">
           <div class="subscription-feature-item--icon">
@@ -59,11 +101,41 @@
         </div>
       {%- endfor -%}
     </div>
+
+    <div class="subscription-features-swiper swiper mobile-only">
+      <div
+        class="swiper-wrapper"
+      >
+        {%- for block in section.blocks -%}
+          <div class="swiper-slide">
+            <div class="subscription-feature--item flex flex-column">
+              <div class="subscription-feature-item--icon">
+                {%- render 'icon', icon: block.settings.icon -%}
+              </div>
+              <span class="subscription-feature-item--description">{{ block.settings.description }}</span>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
     <a href="{{ section.settings.button_url  }}" class="custom-banner_btn btn btn--gray-blue">
       {{- section.settings.button_label -}}
     </a>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.subscription-features-swiper', {
+      grabCursor: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Subscription block",
