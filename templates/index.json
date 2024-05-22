@@ -396,7 +396,7 @@
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "enable_desktop_slider": false,
+        "enable_desktop_slider": true,
         "first_slide_background": "#0e1b4d",
         "first_slide_description": "Don’t just take our word for it, hear what they have to say",
         "first_slide_color": "#ffffff",
