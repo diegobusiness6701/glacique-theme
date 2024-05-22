@@ -101,6 +101,12 @@
     color: var(--white);
 }
 
+.btn--outline {
+    border: 1.5px solid #0E1B4D;
+    background: #fff;
+    color: #0E1B4D;
+}
+
 /* ==============================================================
 // Custom banner
 // =============================================================*/
@@ -213,4 +219,72 @@
 
 .card__media .media {
     border-radius: 30px;
+}
+
+.grid__item-first {
+    padding: 3.5rem !important;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.grid__item-first span {
+    font-family: Sofia Pro;
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 41px;
+    letter-spacing: 0.01em;
+    color: #0E1B4D;
+}
+
+.grid__item-first .btn {
+    font-family: Sofia Pro;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    padding: 1rem 2.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.slider-button {
+    position: absolute;
+    top: 35%;
+    background-color: #fff !important;
+    border-radius: 50%;
+}
+
+.slider-button--next {
+    right: 8rem;
+}
+
+.slider-button--prev {
+    left: 8rem;
+}
+
+.slider-button:disabled {
+    display: none;
+}
+
+.card__heading {
+    font-family: Sofia Pro;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: var(--dark-blue);
+}
+
+.price-item--regular {
+    color: var(--dark-blue);
+}
+
+.card-product__url {
+    font-family: Sofia Pro;
+    font-size: 1.75rem;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: right;
+    color: var(--dark-blue);
 }
