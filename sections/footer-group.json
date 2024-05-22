@@ -5,6 +5,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "text_mzKyjx": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <\/p>"
+          }
+        },
         "footer-0": {
           "type": "link_list",
           "settings": {
@@ -28,6 +35,7 @@
         }
       },
       "block_order": [
+        "text_mzKyjx",
         "footer-0",
         "footer-1",
         "footer-2"
