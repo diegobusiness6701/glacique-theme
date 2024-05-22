@@ -450,6 +450,84 @@
         "padding_bottom": 36
       }
     },
+    "faq_section_3jjirz": {
+      "type": "faq-section",
+      "blocks": {
+        "faq_item_XGwgEc": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "What makes Glacique sheet masks unique?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_4bFTKd": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "Are Glacique products suitable for all skin types?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_xmWpjB": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "How often should I use Glacique sheet masks?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_d6a8NA": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "Where are Glacique products made?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_Ai7rLq": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "Are your products tested on animals?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_FWpQw4": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "Can I use Glacique sheet masks if I have acne-prone skin?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_6rGgCb": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "How should I store my sheet masks?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        },
+        "faq_item_bebkCX": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "What is your return policy?",
+            "description": "Yes, our products are designed to be gentle yet effective for all skin types, including sensitive skin. We recommend checking the specific ingredients listed on each product page to ensure they meet your personal skincare needs."
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_XGwgEc",
+        "faq_item_4bFTKd",
+        "faq_item_xmWpjB",
+        "faq_item_d6a8NA",
+        "faq_item_Ai7rLq",
+        "faq_item_FWpQw4",
+        "faq_item_6rGgCb",
+        "faq_item_bebkCX"
+      ],
+      "settings": {
+        "title": "Our Story",
+        "heading_color": "#fff",
+        "background": "#D7F1F6",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "collage": {
       "type": "collage",
       "blocks": {
@@ -565,6 +643,7 @@
     "subscription_block_M7cAqH",
     "customer_reviews_r9gPCw",
     "our_story_xWXYap",
+    "faq_section_3jjirz",
     "collage",
     "video",
     "multicolumn"
