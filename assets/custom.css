@@ -388,3 +388,69 @@
     border-radius: 30px;
     margin-top: 100px;
 }
+
+/* ====================================================================
+// FAQ title
+// ===================================================================*/
+.accordion {
+    border: none !important;
+    /* border-radius: 30px;
+    background-color: #fff;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem !important; */
+}
+
+.faq__title {
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 4rem 3rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.accordion__title {
+    font-family: Sofia Pro;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 32px;
+    color: var(--dark-blue);
+}
+
+.accordion__content {
+    font-family: Sofia Pro;
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 41px;
+    text-align: justified;
+    color: var(--dark-blue);
+    padding-left: 4rem !important;
+
+}
+
+.icon-collapse {
+    position: absolute;
+    right: 30px;
+}
+
+.icon-collapse::before {
+    content: " ";
+    width: 20px;
+    height: 1.5px;
+    background-color: var(--dark-blue);
+    display: inline-block;
+}
+
+.icon-collapse::after {
+    content: " ";
+    width: 1.5px;
+    height: 20px;
+    background-color: var(--dark-blue);
+    display: inline-block;
+    position: relative;
+    right: 11px;
+    top: 10px;
+    transition: all .3s;
+}
+
+summary[aria-expanded=true] .icon-collapse::after {
+    transform: rotate(-90deg);
+}
