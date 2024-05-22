@@ -325,9 +325,68 @@
     },
     "customer_reviews_r9gPCw": {
       "type": "customer-reviews",
+      "blocks": {
+        "review_VeFcWH": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "product_image": "shopify:\/\/shop_images\/review-prouct1.webp",
+            "customer_name": "Jane",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "product": "cucumber-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "review_UCU7kM": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "product_image": "shopify:\/\/shop_images\/review-product2.webp",
+            "customer_name": "Mina",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "product": "vitamin-c-and-hyaluronic-acid-relaxing-sheet-mask"
+          }
+        },
+        "review_FnBeje": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "product_image": "shopify:\/\/shop_images\/review-product3.webp",
+            "customer_name": "Jess",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "product": "lavender-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "review_zgm4Lm": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "product_image": "shopify:\/\/shop_images\/review-prouct4.webp",
+            "customer_name": "Jess",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "product": "honey-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "review_mmgXR4": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "product_image": "shopify:\/\/shop_images\/review-product5.webp",
+            "customer_name": "Jess",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+            "product": "aloe-vera-and-hyaluronic-acid-sheet-mask"
+          }
+        }
+      },
+      "block_order": [
+        "review_VeFcWH",
+        "review_UCU7kM",
+        "review_FnBeje",
+        "review_zgm4Lm",
+        "review_mmgXR4"
+      ],
       "settings": {
         "title": "Over <strong>40,000<\/strong> satisfied <br>clients",
-        "heading_color": "#0E1B4D",
+        "heading_color": "#0e1b4d",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
