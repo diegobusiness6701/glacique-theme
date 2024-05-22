@@ -1,12 +1,55 @@
 <style>
   #section-{{ section.id }} {
+    display: block;
+    height: calc(100vw / ({{ section.settings.background_image.width }} / {{ section.settings.background_image.height }}));
     background-image: url('{{ section.settings.background_image | image_url  }}');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 12rem 10rem;
+  }
+
+  .subscription-wrapper {
+    width: 45%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: start;
+  }
+
+  .subscription-features-block {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .subscription-feature--item {
+    align-items: center;
   }
 </style>
 <div
   class="section-{{ section.id }}-padding section-subscription scroll-trigger animate--fade-in"
   id="section-{{ section.id }}"
-></div>
+>
+  <div class="subscription-wrapper flex flex-column">
+    <h1 class="heading" style="color: {{ section.settings.heading_color }}; text-align: left;">
+      {{ section.settings.title }}
+    </h1>
+    <span class="description" style="color: {{ section.settings.heading_color }};">
+      {{ section.settings.description }}
+    </span>
+    <div class="subscription-features-block flex">
+      {%- for block in section.blocks -%}
+        <div class="subscription-feature--item flex flex-column">
+          <div class="subscription-feature-item--icon">
+            {%- render 'icon', icon: block.settings.icon -%}
+          </div>
+          <span class="subscription-feature-item--description">{{ block.settings.description }}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+    <a href="{{ section.settings.button_url  }}" class="custom-banner_btn btn btn--gray-blue">
+      {{- section.settings.button_label -}}
+      dd
+    </a>
+  </div>
+</div>
 {% schema %}
 {
   "name": "Subscription block",
@@ -57,6 +100,16 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
     }
   ],
   "blocks": [
