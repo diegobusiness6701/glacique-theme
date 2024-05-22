@@ -445,7 +445,7 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/out-story.webp",
         "title": "Our <strong>Story<\/strong>",
-        "heading_color": "#fff",
+        "heading_color": "#0e1b4d",
         "padding_top": 36,
         "padding_bottom": 36
       }
