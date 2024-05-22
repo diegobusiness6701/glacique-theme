@@ -103,9 +103,11 @@
           {% if settings.animations_reveal_on_scroll %}
             data-cascade
           {% endif %}
-          style="background: {{ section.settings.first_slide_background }}; border-radius: 30px; --animation-order: 0;"
+          style="background: {{ section.settings.first_slide_background }};  border-radius: 30px; --animation-order: 0;"
         >
-          <span>{{ section.settings.first_slide_description }}</span>
+          <span style="color: {{ section.settings.first_slide_color }};">
+            {{- section.settings.first_slide_description -}}
+          </span>
           <a class="btn btn--outline" href="{{ section.settings.first_slide_button_url }}">
             {{- section.settings.first_slide_button_text -}}
           </a>
@@ -473,6 +475,43 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Rating",
+          "step": 0.5,
+          "min": 1,
+          "max": 5,
+          "default": 5
+        },
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        }
+      ]
     }
   ],
   "presets": [
