@@ -443,6 +443,7 @@
         "story_GaUzQT"
       ],
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/out-story.webp",
         "title": "Subscription block",
         "heading_color": "#fff",
         "padding_top": 36,
