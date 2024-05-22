@@ -535,8 +535,8 @@
           "type": "column",
           "settings": {
             "icon": "science",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Science Backed",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -544,9 +544,19 @@
         "column2": {
           "type": "column",
           "settings": {
+            "icon": "leaves",
+            "title": "Paraben Free",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Gdd4GY": {
+          "type": "column",
+          "settings": {
             "icon": "science",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Non GMO",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -554,9 +564,9 @@
         "column3": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "icon": "no-gmo",
+            "title": "Cruelty Free",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -564,9 +574,9 @@
         "column_FV733A": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "icon": "cruelty-free",
+            "title": "Vegan",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -574,19 +584,9 @@
         "column_LLz64D": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_gpVH3B": {
-          "type": "column",
-          "settings": {
-            "icon": "science",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "icon": "vegan",
+            "title": "Ethically sourced",
+            "text": "",
             "link_label": "",
             "link": ""
           }
@@ -595,13 +595,13 @@
       "block_order": [
         "column1",
         "column2",
+        "column_Gdd4GY",
         "column3",
         "column_FV733A",
-        "column_LLz64D",
-        "column_gpVH3B"
+        "column_LLz64D"
       ],
       "settings": {
-        "title": "<strong>Nature’s Touch<\/strong> in Every Mask - Experience Glacique",
+        "title": "<strong>Nature’s Touch<\/strong> in Every Mask - <br>Experience Glacique",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "adapt",
