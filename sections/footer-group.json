@@ -41,6 +41,7 @@
         "footer-2"
       ],
       "settings": {
+        "background_image": "shopify:\/\/shop_images\/footer-background-664dcc4155bf7.webp",
         "color_scheme": "scheme-5",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe to our emails",
