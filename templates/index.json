@@ -564,7 +564,7 @@
         "column3": {
           "type": "column",
           "settings": {
-            "icon": "no-gmo",
+            "icon": "cruelty-free",
             "title": "Cruelty Free",
             "text": "",
             "link_label": "",
@@ -574,7 +574,7 @@
         "column_FV733A": {
           "type": "column",
           "settings": {
-            "icon": "cruelty-free",
+            "icon": "vegan",
             "title": "Vegan",
             "text": "",
             "link_label": "",
@@ -584,7 +584,7 @@
         "column_LLz64D": {
           "type": "column",
           "settings": {
-            "icon": "vegan",
+            "icon": "ethical",
             "title": "Ethically sourced",
             "text": "",
             "link_label": "",
