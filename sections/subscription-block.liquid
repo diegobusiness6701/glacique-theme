@@ -20,7 +20,22 @@
     justify-content: space-between;
   }
   .subscription-feature--item {
+    gap: 10px;
     align-items: center;
+  }
+
+  .subscription-feature-item--icon {
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px #0E1B4D solid;
+    border-radius: 50%;
+  }
+
+  .subscription-feature-item--description {
+    text-align: center;
   }
 </style>
 <div
@@ -46,7 +61,6 @@
     </div>
     <a href="{{ section.settings.button_url  }}" class="custom-banner_btn btn btn--gray-blue">
       {{- section.settings.button_label -}}
-      dd
     </a>
   </div>
 </div>
