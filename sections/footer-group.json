@@ -8,6 +8,7 @@
         "text_mzKyjx": {
           "type": "text",
           "settings": {
+            "image": "shopify:\/\/shop_images\/logo.png",
             "heading": "Heading",
             "subtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <\/p>"
           }
