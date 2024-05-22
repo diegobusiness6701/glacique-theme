@@ -11,6 +11,14 @@
           content: '';
           display: block;
         }
+
+        #Custom-banner-{{ section.id }} {
+          flex-direction: column;
+        }
+
+        .w-half {
+          width: 100%;
+        }
       }
 
       @media screen and (min-width: 750px) {
@@ -26,8 +34,68 @@
 {% endcomment %}
 
 {%- style -%}
-  #Banner-{{ section.id }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  @media screen and (max-width: 749px) {
+    #Banner-{{ section.id }}::before,
+    #Banner-{{ section.id }} .banner__media::before,
+    #Banner-{{ section.id }}:not(.banner--mobile-bottom) .banner__content::before {
+      padding-bottom: {{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;
+      content: '';
+      display: block;
+    }
+
+    #Custom-banner-{{ section.id }} {
+      flex-direction: column;
+    }
+
+    .w-half {
+      width: 100%;
+    }
+
+
+    .custom-banner--review {
+      padding: 2rem;
+    }
+
+    .custom-banner--discount-wrapper {
+      padding: 2rem;
+      font-size: 40px;
+    }
+
+    .product-rating svg {
+      width: 20px !important;
+      height: 20px !important;
+    }
+
+    .review--clients-number {
+      font-size: 16px;
+    }
+
+    .heading {
+      font-size: 40px;
+      text-align: left;
+    }
+
+    .custom-banner--review .description {
+      font-size: 20px;
+    }
+
+    .custom-banner--review .feature-item {
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .custom-banner--review .feature-item svg {
+      width: 90px !important;
+      height: 90px !important;
+    }
+
+    .custom-banner--review .feature-item .feature-item_description {
+      font-size: 20px;
+    }
+
+    .custom-banner_btn {
+      font-size: 16px;
+    }
   }
 {%- endstyle -%}
 

@@ -464,3 +464,20 @@ summary[aria-expanded=true] .icon-collapse::after {
     text-align: center;
     color: #4770DB;
 }
+
+.footer-block__heading {
+    font-family: Sofia Pro;
+    font-size: 2.5rem !important;
+    font-weight: 600;
+    line-height: 32px;
+    color: #fff;
+}
+
+.footer-block__details-content,
+.footer-block__details-content li .link--text {
+    font-family: Sofia Pro;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 44.4px;
+    color: #fff;
+}
