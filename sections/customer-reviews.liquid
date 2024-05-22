@@ -47,6 +47,80 @@
   #Slider-{{ section.id }} .grid__item {
     min-width: 500px;
   }
+
+  @media screen and (max-width: 749px) {
+    .title-wrapper .heading {
+        text-align: center !important;
+        line-height: 40px;
+    }
+
+    #Slider-{{ section.id }} {
+        gap: 2rem !important;
+    }
+
+    #Slider-{{ section.id }} .grid__item {
+        min-width: calc(100vw - 3rem);
+        max-width: calc(100vw - 3rem);
+    }
+
+    #Slider-{{ section.id }} .grid__item-first {
+        margin-top: 2rem;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #Slider-{{ section.id }} .grid__item-first span {
+        text-align: center;
+        font-family: Sofia Pro;
+        font-size: 22.82px;
+        font-weight: 600;
+        line-height: 29.24px;
+        letter-spacing: 0.01em;
+        text-align: center;
+
+    }
+
+    #Slider-{{ section.id }} .grid__item .review--description {
+        font-family: Sofia Pro;
+        font-size: 19.94px;
+        font-weight: 400;
+        line-height: 24.22px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    #Slider-{{ section.id }} .grid__item .review--customer-name {
+        font-family: Sofia Pro;
+        font-size: 19.94px;
+        font-weight: 400;
+        line-height: 24.22px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    #Slider-{{ section.id }} .grid__item .review--product-name {
+        font-family: Sofia Pro;
+        font-size: 17.1px;
+        font-weight: 400;
+        line-height: 17.81px;
+        letter-spacing: 0.01em;
+        text-align: left;
+
+    }
+
+    #Slider-{{ section.id }} .grid__item .review--product-link {
+        font-family: Sofia Pro;
+        font-size: 17.1px;
+        font-weight: 400;
+        line-height: 24.22px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    }
+
+    .review-slider .slider-button {
+        display: none;
+    }
+  }
 {%- endstyle -%}
 
 {%- liquid
