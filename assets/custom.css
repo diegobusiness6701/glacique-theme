@@ -330,3 +330,48 @@
     letter-spacing: 0.01em;
     color: white;
 }
+
+/* =========================================================
+// Customer review carousel
+// ========================================================*/
+.review--product-image {
+    position: absolute;
+    top: -100px;
+    right: 30px;
+}
+
+.review--description {
+    font-family: Sofia Pro;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: var(--dark-blue);
+}
+
+.review--customer-name {
+    font-family: Sofia Pro;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: var(--dark-blue);
+}
+
+.review--product-name {
+    font-family: Sofia Pro;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    color: var(--dark-blue);
+}
+
+.review--product-link {
+    font-family: Sofia Pro;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: var(--dark-blue);
+}
