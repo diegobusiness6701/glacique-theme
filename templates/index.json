@@ -315,6 +315,7 @@
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/subscription-background.webp",
+        "mobile_background_image": "shopify:\/\/shop_images\/subscription-mobile-background.webp",
         "title": "<strong>Save<\/strong> 20% with subscribe & save",
         "description": "Get regularly scheduled deliveries to your doorstep to ensure your skin is always radiant for less spend",
         "heading_color": "#0e1b4d",
