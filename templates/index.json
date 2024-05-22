@@ -534,6 +534,7 @@
         "column1": {
           "type": "column",
           "settings": {
+            "icon": "science",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -543,6 +544,7 @@
         "column2": {
           "type": "column",
           "settings": {
+            "icon": "science",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -552,6 +554,7 @@
         "column3": {
           "type": "column",
           "settings": {
+            "icon": "science",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -561,6 +564,7 @@
         "column_FV733A": {
           "type": "column",
           "settings": {
+            "icon": "science",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -570,6 +574,7 @@
         "column_LLz64D": {
           "type": "column",
           "settings": {
+            "icon": "science",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
@@ -579,6 +584,7 @@
         "column_gpVH3B": {
           "type": "column",
           "settings": {
+            "icon": "science",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
