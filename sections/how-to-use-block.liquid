@@ -1,10 +1,29 @@
-<div id="section-{{ section.id }}" class="section">
+<style>
+  #section-{{ section.id }} {
+      padding: 8rem 6rem;
+      text-align: center;
+      background: #D7F1F6;
+  }
+
+  #section-{{ section.id }} .how-to-user-block {
+    background: #fff;
+    gap: 100px;
+    padding: 5rem;
+    margin-top: 6rem;
+  }
+
+  #section-{{ section.id }} .how-to-step--item {
+    max-width: 462px;
+  }
+</style>
+
+<div id="section-{{ section.id }}" class="section" style="padding: ">
   <h1 class="heading">{{ section.settings.heading }}</h1>
-  <div class="how-to-user-block flex">
+  <div class="how-to-user-block flex" style="width: 100%; justify-content: center">
     {%- for block in section.blocks -%}
-      <div class="flex flex-column">
-        <img src="{{ block.image |  image_url }}">
-        <span class="description">{{ section.settings.description }}</span>
+      <div class="how-to-step--item flex flex-column">
+        <img src="{{ block.settings.image | image_url }}">
+        <span class="description">{{ block.settings.description }}</span>
       </div>
     {%- endfor -%}
   </div>
