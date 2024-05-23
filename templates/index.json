@@ -446,6 +446,7 @@
       ],
       "settings": {
         "background_image": "shopify:\/\/shop_images\/out-story.webp",
+        "mobile_background": "shopify:\/\/shop_images\/our-story-mobile-background-664ec8d031c81.webp",
         "title": "Our <strong>Story<\/strong>",
         "heading_color": "#0e1b4d",
         "padding_top": 36,
