@@ -39,13 +39,35 @@
 
   #collection-{{ section.id }} .slider-button {
     position: absolute;
-    top: calc(35% + 100px);
+    top: calc(35%);
     background-color: #fff !important;
     border-radius: 50%;
   }
 
   #Slider-{{ section.id }} .grid__item {
-    min-width: 500px;
+    min-width: 300px;
+  }
+
+  #Slider-{{ section.id }} .product-name {
+    font-family: Sofia Pro;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: #0E1B4D;
+    text-align: center;
+    max-width: 250px;
+
+  }
+
+  #Slider-{{ section.id }} .product-description {
+    color: #0E1B4D;
+    font-family: Sofia Pro;
+    font-size: 28px;
+    font-weight: 200;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    text-align: center;
   }
 
   @media screen and (max-width: 749px) {
@@ -198,25 +220,10 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        <li
-          id="Slide-{{ section.id }}-first"
-          class="grid__item grid__item-first flex flex-column{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-          {% endif %}
-          style="--animation-order: 0;"
-        >
-          <span style="color: {{ section.settings.first_slide_color }};">
-            {{- section.settings.first_slide_description -}}
-          </span>
-          <a class="btn btn--outline" href="{{ section.settings.first_slide_button_url }}">
-            {{- section.settings.first_slide_button_text -}}
-          </a>
-        </li>
         {%- for block in section.blocks -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="desktop-only review-slide grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="desktop-only grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             data-cascade
 
             {% if settings.animations_reveal_on_scroll %}
@@ -224,22 +231,14 @@
               style="--animation-order: {{ forloop.index }}; "
             {% endif %}
           >
-            {%- if block.settings.product_image != blank -%}
-              <img class="review--product-image" src="{{ block.settings.product_image |  image_url: width: 200 }}">
-            {%- endif -%}
-            <div class="review-wrapper flex flex-column" style="gap: 10px;">
-              <div style="margin-bottom: 50px;">
-                {%- render 'star-rating', rating: block.settings.rating, star_size: 35, star_fill: '#1565C0' -%}
-              </div>
-              <span class="review--description">"{{ block.settings.description }}"</span>
-              <span class="review--customer-name">{{ block.settings.customer_name }}</span>
-              <div style="display: grid; grid-template-columns: 1fr 1fr auto; align-items: end;">
-                <span class="review--product-name" style="display: inline-block; max-width: 200px;">
-                  {{- block.settings.product.title -}}
-                </span>
-                <div>&nbsp;</div>
-                <a class="review--product-link" href="{{ block.settings.product.url }}">Shop Now</a>
-              </div>
+            <div class="slide-wrapper flex flex-column" style="gap: 10px; align-items: center;">
+              {%- if block.settings.product_image != blank -%}
+                <img class="slide--product-image" src="{{ block.settings.product_image |  image_url: width: 200 }}">
+              {%- endif -%}
+              <span class="product-name" style="display: inline-block;">
+                {{- block.settings.product.title -}}
+              </span>
+              <span class="product-description">{{ block.settings.description }}</span>
             </div>
           </li>
         {%- endfor -%}
