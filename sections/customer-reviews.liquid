@@ -61,6 +61,7 @@
     #Slider-{{ section.id }} .grid__item {
         min-width: calc(100vw - 3rem);
         max-width: calc(100vw - 3rem);
+        width: calc(100vw - 3rem);
     }
 
     #Slider-{{ section.id }} .grid__item-first {
@@ -119,6 +120,21 @@
 
     .review-slider .slider-button {
         display: none;
+    }
+
+    .review--product-image {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    .review-swiper .swiper-slide {
+        margin-right: 2rem;
+    }
+
+    .review-swiper .swiper-wrapper .swiper-slide {
+        min-width: calc(100vw - 9rem) !important;
+        max-width: calc(100vw - 9rem) !important;
+        width: calc(100vw - 9rem) !important;
     }
   }
 {%- endstyle -%}
@@ -200,7 +216,7 @@
         {%- for block in section.blocks -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="review-slide grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="desktop-only review-slide grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             data-cascade
 
             {% if settings.animations_reveal_on_scroll %}
@@ -227,6 +243,43 @@
             </div>
           </li>
         {%- endfor -%}
+        <div class="swiper review-swiper mobile-only">
+          <div
+            class="swiper-wrapper"
+          >
+            {%- for block in section.blocks -%}
+              <li
+                id="Slide-{{ section.id }}-{{ forloop.index }}"
+                class="swiper-slide review-slide grid__item{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                data-cascade
+
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                  style="--animation-order: {{ forloop.index }}; "
+                {% endif %}
+              >
+                {%- if block.settings.product_image != blank -%}
+                  <img class="review--product-image" src="{{ block.settings.product_image |  image_url: width: 200 }}">
+                {%- endif -%}
+                <div class="review-wrapper flex flex-column" style="gap: 10px;">
+                  <div style="margin-bottom: 50px;">
+                    {%- render 'star-rating', rating: block.settings.rating, star_size: 35, star_fill: '#1565C0' -%}
+                  </div>
+                  <span class="review--description">"{{ block.settings.description }}"</span>
+                  <span class="review--customer-name">{{ block.settings.customer_name }}</span>
+                  <div style="display: grid; grid-template-columns: 1fr 1fr auto; align-items: end;">
+                    <span class="review--product-name" style="display: inline-block; max-width: 200px;">
+                      {{- block.settings.product.title -}}
+                    </span>
+                    <div>&nbsp;</div>
+                    <a class="review--product-link" href="{{ block.settings.product.url }}">Shop Now</a>
+                  </div>
+                </div>
+              </li>
+            {%- endfor -%}
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </ul>
       {%- if show_mobile_slider or show_desktop_slider -%}
         <button
@@ -274,7 +327,18 @@
     {%- endif -%}
   </div>
 </div>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.review-swiper', {
+      grabCursor: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Customer Reviews",
