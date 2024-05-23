@@ -280,6 +280,50 @@
     },
     "custom_product_slider_pWPqxG": {
       "type": "custom-product-slider",
+      "blocks": {
+        "product_8nmbfN": {
+          "type": "product",
+          "settings": {
+            "description": "",
+            "product": "cucumber-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "product_kV83YJ": {
+          "type": "product",
+          "settings": {
+            "description": "",
+            "product": "lavender-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "product_BqAk9E": {
+          "type": "product",
+          "settings": {
+            "description": "",
+            "product": "aloe-vera-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "product_eawCtA": {
+          "type": "product",
+          "settings": {
+            "description": "",
+            "product": "honey-and-hyaluronic-acid-sheet-mask"
+          }
+        },
+        "product_cpQXtp": {
+          "type": "product",
+          "settings": {
+            "description": "",
+            "product": "vitamin-c-and-hyaluronic-acid-relaxing-sheet-mask"
+          }
+        }
+      },
+      "block_order": [
+        "product_8nmbfN",
+        "product_kV83YJ",
+        "product_BqAk9E",
+        "product_eawCtA",
+        "product_cpQXtp"
+      ],
       "settings": {
         "title": "Custom Product Slider",
         "heading_color": "#0E1B4D",
