@@ -449,6 +449,38 @@
         "padding_bottom": 36
       }
     },
+    "how_to_use_block_Uf6FVB": {
+      "type": "how-to-use-block",
+      "blocks": {
+        "method_9CqkGk": {
+          "type": "method",
+          "settings": {
+            "description": ""
+          }
+        },
+        "method_UJpYyN": {
+          "type": "method",
+          "settings": {
+            "description": ""
+          }
+        },
+        "method_iJNYHC": {
+          "type": "method",
+          "settings": {
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "method_9CqkGk",
+        "method_UJpYyN",
+        "method_iJNYHC"
+      ],
+      "settings": {
+        "heading": "How to use",
+        "background_color": "#D7F1F6"
+      }
+    },
     "faq_section_kEFCQX": {
       "type": "faq-section",
       "blocks": {
@@ -580,6 +612,7 @@
     "brand_section_bJpXhd",
     "custom_product_slider_pWPqxG",
     "multicolumn",
+    "how_to_use_block_Uf6FVB",
     "faq_section_kEFCQX",
     "featured_collection_9LNxcw",
     "related-products"
