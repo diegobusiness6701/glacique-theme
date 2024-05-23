@@ -350,6 +350,16 @@
         "padding_bottom": 36
       }
     },
+    "faq_section_kEFCQX": {
+      "type": "faq-section",
+      "settings": {
+        "title": "Our Story",
+        "heading_color": "#0e1b4d",
+        "background": "#D7F1F6",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -374,6 +384,7 @@
     "features_carousel_RgGmn3",
     "brand_section_bJpXhd",
     "multicolumn",
+    "faq_section_kEFCQX",
     "related-products"
   ]
 }
