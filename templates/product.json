@@ -284,6 +284,7 @@
         "product_8nmbfN": {
           "type": "product",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/cucumber-664f358676544.webp",
             "description": "Hydrates and soothes irritated skin.",
             "product": "cucumber-and-hyaluronic-acid-sheet-mask"
           }
@@ -291,6 +292,7 @@
         "product_kV83YJ": {
           "type": "product",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/lavender-664f358d41b91.webp",
             "description": "Calms skin and reduces signs of stress.",
             "product": "lavender-and-hyaluronic-acid-sheet-mask"
           }
@@ -298,6 +300,7 @@
         "product_BqAk9E": {
           "type": "product",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/aloe-664f3587b4126.webp",
             "description": "Heals and hydrates sun-damaged skin.",
             "product": "aloe-vera-and-hyaluronic-acid-sheet-mask"
           }
@@ -305,6 +308,7 @@
         "product_eawCtA": {
           "type": "product",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/honey-664f358add135.webp",
             "description": "Nourishes and promotes a clear complexion.",
             "product": "honey-and-hyaluronic-acid-sheet-mask"
           }
@@ -312,6 +316,7 @@
         "product_cpQXtp": {
           "type": "product",
           "settings": {
+            "product_image": "shopify:\/\/shop_images\/orange-664f3588c73e1.webp",
             "description": "Brightens and fights signs of aging.",
             "product": "vitamin-c-and-hyaluronic-acid-relaxing-sheet-mask"
           }
