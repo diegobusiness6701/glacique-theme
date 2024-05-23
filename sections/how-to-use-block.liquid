@@ -1,0 +1,55 @@
+<div id="section-{{ section.id }}" class="section">
+  <h1 class="heading">{{ section.settings.heading }}</h1>
+  <div class="how-to-user-block flex">
+    {%- for block in section.blocks -%}
+      <div class="flex flex-column">
+        <img src="{{ block.image |  image_url }}">
+        <span class="description">{{ section.settings.description }}</span>
+      </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "How to use",
+  "class": "section section-block",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "default": "How to use",
+      "label": "Heading"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "default": "#D7F1F6",
+      "label": "Background"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "method",
+      "name": "Method",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How to use"
+    }
+  ]
+}
+{% endschema %}
