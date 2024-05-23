@@ -494,3 +494,9 @@ summary[aria-expanded=true] .icon-collapse::after {
     line-height: 44.4px;
     color: #fff;
 }
+
+.multicolumn-card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
