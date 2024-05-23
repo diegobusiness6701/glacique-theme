@@ -455,12 +455,14 @@
         "method_9CqkGk": {
           "type": "method",
           "settings": {
+            "image": "shopify:\/\/shop_images\/step-1-664f454e73cf0.webp",
             "description": ""
           }
         },
         "method_UJpYyN": {
           "type": "method",
           "settings": {
+            "image": "shopify:\/\/shop_images\/step-2-1-664f454f5aada.webp",
             "description": ""
           }
         },
@@ -479,7 +481,7 @@
       ],
       "settings": {
         "heading": "How to use",
-        "background_color": "#D7F1F6"
+        "background_color": "#d7f1f6"
       }
     },
     "faq_section_kEFCQX": {
