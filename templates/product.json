@@ -131,19 +131,31 @@
         "slide_F6TMMx": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide1-664cffdd1394a.webp"
+            "image": "shopify:\/\/shop_images\/slide1-664f29467107a.webp"
           }
         },
         "slide_RgUgNP": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide2-664cffe273a2f.webp"
+            "image": "shopify:\/\/shop_images\/slide2-664f294601688.webp"
           }
         },
         "slide_WWdqL3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide3-664cffeb3cf5a.webp"
+            "image": "shopify:\/\/shop_images\/slide3-664f294cc1608.webp"
+          }
+        },
+        "slide_YXjbwX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide5-664f2952ace72.webp"
+          }
+        },
+        "slide_kNUYNi": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slide4-664f2950b9313.webp"
           }
         },
         "feature_9hjELX": {
@@ -199,6 +211,8 @@
         "slide_F6TMMx",
         "slide_RgUgNP",
         "slide_WWdqL3",
+        "slide_YXjbwX",
+        "slide_kNUYNi",
         "feature_9hjELX",
         "feature_bFmTam",
         "feature_DTpaGX",
@@ -208,7 +222,7 @@
       ],
       "settings": {
         "title": "Glacique Sheet Mask Ingredients and <br>Skin <strong>Benefits<\/strong>",
-        "heading_color": "#fff",
+        "heading_color": "#ffffff",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -221,7 +235,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/womens-health-logo-664c66cad40ba.webp",
             "description": "",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "brand_HcyDYJ": {
@@ -229,7 +243,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/logo-attbmn5hwo6j64dte-664c66cbbf780.webp",
             "description": "",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "brand_TjGHMU": {
@@ -237,7 +251,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/business-insider-664c66cc14c1a.webp",
             "description": "",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         },
         "brand_K6JGFm": {
@@ -245,7 +259,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/the-times-masthead-664c66cd575c5.webp",
             "description": "",
-            "color": "#0E1B4D"
+            "color": "#0e1b4d"
           }
         }
       },
@@ -415,7 +429,7 @@
       "settings": {
         "title": "Our Story",
         "heading_color": "#0e1b4d",
-        "background": "#D7F1F6",
+        "background": "#d7f1f6",
         "padding_top": 36,
         "padding_bottom": 36
       }
