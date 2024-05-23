@@ -522,8 +522,9 @@
     "featured_collection_9LNxcw": {
       "type": "featured-collection",
       "settings": {
+        "first_card_shown": false,
         "title": "You may also <strong>like!<\/strong>",
-        "heading_color": "#0E1B4D",
+        "heading_color": "#0e1b4d",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -535,7 +536,7 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "first_slide_background": "#D7F1F6",
+        "first_slide_background": "#d7f1f6",
         "first_slide_description": "",
         "first_slide_color": "",
         "first_slide_button_text": "",
