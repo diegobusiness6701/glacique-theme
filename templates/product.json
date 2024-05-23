@@ -352,6 +352,66 @@
     },
     "faq_section_kEFCQX": {
       "type": "faq-section",
+      "blocks": {
+        "faq_item_tPEYeT": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        },
+        "faq_item_VHCiqB": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        },
+        "faq_item_NFLibC": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        },
+        "faq_item_QN4Qpj": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        },
+        "faq_item_J97nUC": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        },
+        "faq_item_QWaPKi": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        },
+        "faq_item_4ic7Un": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_tPEYeT",
+        "faq_item_VHCiqB",
+        "faq_item_NFLibC",
+        "faq_item_QN4Qpj",
+        "faq_item_J97nUC",
+        "faq_item_QWaPKi",
+        "faq_item_4ic7Un"
+      ],
       "settings": {
         "title": "Our Story",
         "heading_color": "#0e1b4d",
