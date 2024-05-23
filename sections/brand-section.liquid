@@ -26,6 +26,14 @@
 {% endcomment %}
 
 {%- style -%}
+  #shopify-section-{{ section.id }} {
+    padding: {{ section.settings.padding_y }}px {{ section.settings.padding_x }}px;
+  }
+
+  #Banner-{{ section.id }} {
+    border-radius: {{ section.settings.border_radius }}px;
+  }
+
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
@@ -94,6 +102,33 @@
       "type": "color",
       "id": "background",
       "label": "Background color"
+    },
+    {
+      "type": "range",
+      "label": "Paddding Y",
+      "id": "padding_y",
+      "default": 0,
+      "step": 2,
+      "min": 10,
+      "max": 150
+    },
+    {
+      "type": "range",
+      "label": "Paddding X",
+      "id": "padding_x",
+      "default": 0,
+      "step": 2,
+      "min": 10,
+      "max": 150
+    },
+    {
+      "type": "range",
+      "label": "border_radius",
+      "id": "padding_y",
+      "default": 0,
+      "step": 5,
+      "min": 10,
+      "max": 150
     },
     {
       "type": "inline_richtext",
