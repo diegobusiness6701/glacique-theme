@@ -235,9 +235,9 @@
               {%- if block.settings.product_image != blank -%}
                 <img class="slide--product-image" src="{{ block.settings.product_image |  image_url: width: 200 }}">
               {%- endif -%}
-              <span class="product-name" style="display: inline-block;">
+              <a href="{{ product.url }}" class="product-name" style="display: inline-block; text-decoration: none;">
                 {{- block.settings.product.title -}}
-              </span>
+              </a>
               <span class="product-description">{{ block.settings.description }}</span>
             </div>
           </li>
@@ -347,6 +347,7 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    
     {
       "type": "textarea",
       "id": "title",

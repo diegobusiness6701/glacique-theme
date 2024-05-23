@@ -143,19 +143,21 @@
         role="list"
         aria-label="{{ 'general.slider.name' | t }}"
       >
-        <li
-          id="Slide-{{ section.id }}-first"
-          class="grid__item grid__item-first flex flex-column{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
-          {% if settings.animations_reveal_on_scroll %}
-            data-cascade
-          {% endif %}
-          style="background: {{ section.settings.first_slide_background }}; border-radius: 30px; --animation-order: 0;"
-        >
-          <span>{{ section.settings.first_slide_description }}</span>
-          <a class="btn btn--outline" href="{{ section.settings.first_slide_button_url }}">
-            {{- section.settings.first_slide_button_text -}}
-          </a>
-        </li>
+        {%- if section.settings.first_card_shown -%}
+          <li
+            id="Slide-{{ section.id }}-first"
+            class="grid__item grid__item-first flex flex-column{% if show_mobile_slider or show_desktop_slider %} slider__slide{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}
+              data-cascade
+            {% endif %}
+            style="background: {{ section.settings.first_slide_background }}; border-radius: 30px; --animation-order: 0;"
+          >
+            <span>{{ section.settings.first_slide_description }}</span>
+            <a class="btn btn--outline" href="{{ section.settings.first_slide_button_url }}">
+              {{- section.settings.first_slide_button_text -}}
+            </a>
+          </li>
+        {%- endif -%}
         {%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
           <li
             id="Slide-{{ section.id }}-{{ forloop.index }}"
@@ -261,6 +263,12 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "first_card_shown",
+      "label": "First card show",
+      "default": true
+    },
     {
       "type": "textarea",
       "id": "title",
