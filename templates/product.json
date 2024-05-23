@@ -331,7 +331,7 @@
       ],
       "settings": {
         "title": "<strong>Refreshing<\/strong> Flavors You'll Love!",
-        "heading_color": "#0E1B4D",
+        "heading_color": "#0e1b4d",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -342,7 +342,7 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": true,
-        "first_slide_background": "#D7F1F6",
+        "first_slide_background": "#d7f1f6",
         "first_slide_description": "",
         "first_slide_color": "",
         "first_slide_button_text": "",
@@ -367,7 +367,7 @@
           "type": "column",
           "settings": {
             "icon": "science",
-            "title": "Column",
+            "title": "Science Backed",
             "text": "",
             "link_label": "",
             "link": ""
@@ -376,8 +376,8 @@
         "column_KwQ3mn": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
+            "icon": "leaves",
+            "title": "Paraben Free",
             "text": "",
             "link_label": "",
             "link": ""
@@ -386,8 +386,8 @@
         "column_gLBaQe": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
+            "icon": "no-gmo",
+            "title": "Non GMO",
             "text": "",
             "link_label": "",
             "link": ""
@@ -396,8 +396,8 @@
         "column_Q643zP": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
+            "icon": "cruelty-free",
+            "title": "Cruelty Free",
             "text": "",
             "link_label": "",
             "link": ""
@@ -406,8 +406,8 @@
         "column_UhVhT4": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
+            "icon": "vegan",
+            "title": "Vegan",
             "text": "",
             "link_label": "",
             "link": ""
@@ -416,8 +416,8 @@
         "column_QEAFnU": {
           "type": "column",
           "settings": {
-            "icon": "science",
-            "title": "Column",
+            "icon": "ethical",
+            "title": "Ethically sourced",
             "text": "",
             "link_label": "",
             "link": ""
