@@ -456,21 +456,21 @@
           "type": "method",
           "settings": {
             "image": "shopify:\/\/shop_images\/step-1-664f454e73cf0.webp",
-            "description": ""
+            "description": "After cleansing and toning, evenly apply the mask over the face"
           }
         },
         "method_UJpYyN": {
           "type": "method",
           "settings": {
             "image": "shopify:\/\/shop_images\/step-2-1-664f454f5aada.webp",
-            "description": ""
+            "description": "Remove after 15-20 minutes"
           }
         },
         "method_iJNYHC": {
           "type": "method",
           "settings": {
             "image": "shopify:\/\/shop_images\/step-3-1-664f455227a23.webp",
-            "description": ""
+            "description": "Gently pat any remaining essence into skin."
           }
         }
       },
