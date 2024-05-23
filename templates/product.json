@@ -154,22 +154,6 @@
             "description": "Hydrates and soothes irritated skin"
           }
         },
-        "feature_DTpaGX": {
-          "type": "feature",
-          "settings": {
-            "icon": "lavender",
-            "heading": "Lavender + Hyaluronic Acid",
-            "description": "Calms skin and reduces signs of stress"
-          }
-        },
-        "feature_JEmjQB": {
-          "type": "feature",
-          "settings": {
-            "icon": "aloe",
-            "heading": "Aloe Vera + Hyaluronic Acid",
-            "description": "Heals and hydrates sun-damaged skin"
-          }
-        },
         "feature_bFmTam": {
           "type": "feature",
           "settings": {
@@ -178,12 +162,28 @@
             "description": "Brightens and fights signs of aging"
           }
         },
+        "feature_DTpaGX": {
+          "type": "feature",
+          "settings": {
+            "icon": "lavender",
+            "heading": "Lavender + Hyaluronic Acid",
+            "description": "Calms skin and reduces signs of stress"
+          }
+        },
         "feature_BJdnA6": {
           "type": "feature",
           "settings": {
             "icon": "honey",
             "heading": "Honey + Hyaluronic Acid",
             "description": "Nourishes and promotes a clear complexion"
+          }
+        },
+        "feature_JEmjQB": {
+          "type": "feature",
+          "settings": {
+            "icon": "aloe",
+            "heading": "Aloe Vera + Hyaluronic Acid",
+            "description": "Heals and hydrates sun-damaged skin"
           }
         },
         "feature_GRLjA4": {
@@ -200,10 +200,10 @@
         "slide_RgUgNP",
         "slide_WWdqL3",
         "feature_9hjELX",
-        "feature_DTpaGX",
-        "feature_JEmjQB",
         "feature_bFmTam",
+        "feature_DTpaGX",
         "feature_BJdnA6",
+        "feature_JEmjQB",
         "feature_GRLjA4"
       ],
       "settings": {
