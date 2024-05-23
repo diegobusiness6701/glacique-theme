@@ -271,6 +271,9 @@
       ],
       "settings": {
         "background": "#d7f1f6",
+        "padding_y": 96,
+        "padding_x": 106,
+        "border_radius": 45,
         "heading": "As <strong>seen<\/strong> in",
         "heading_color": "#0e1b4d"
       }
