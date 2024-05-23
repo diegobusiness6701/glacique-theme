@@ -28,6 +28,33 @@
     color: #fff;
 
   }
+
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} {
+        display: block;
+        height: calc(100vw / ({{ section.settings.mobile_background.width }} / {{ section.settings.mobile_background.height }}));
+        background-image: url('{{ section.settings.mobile_background | image_url  }}');
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+    #section-{{ section.id }} .heading {
+        top: 40px;
+        padding-left: 15px;
+        text-align: left !important;
+    }
+
+    #section-{{ section.id }} .our-story-swiper {
+        max-width: calc(100vw - 30px);
+        left: 15px;
+        top: 140px;
+    }
+
+    #section-{{ section.id }} .our-story-swiper .swiper-slide.description {
+        font-size: 14px;
+    }
+  }
 </style>
 <div
   class="section-{{ section.id }}-padding section-our-story scroll-trigger animate--fade-in"

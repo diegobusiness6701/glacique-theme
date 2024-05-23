@@ -10,6 +10,32 @@
       padding-right: calc((100% - var(--faq-wrapper-width)) / 2);
       background: #D7F1F6;
   }
+
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #section-{{ section.id }} .heading {
+        text-align: center;
+    }
+
+    .faq__title {
+        padding: 10px 20px !important;
+        border-radius: 10px !important;
+    }
+
+    .accordion__title {
+        font-family: Sofia Pro;
+        font-size: 20px;
+        font-weight: 200;
+    }
+
+    .accordion__content {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+  }
 </style>
 <div
   class="section-{{ section.id }}-padding section-our-story scroll-trigger animate--fade-in"
