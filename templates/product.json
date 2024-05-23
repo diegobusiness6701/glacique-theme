@@ -150,48 +150,48 @@
           "type": "feature",
           "settings": {
             "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "heading": "Cucumber + Hyaluronic Acid",
+            "description": "Hydrates and soothes irritated skin"
           }
         },
         "feature_DTpaGX": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "lavender",
+            "heading": "Lavender + Hyaluronic Acid",
+            "description": "Calms skin and reduces signs of stress"
           }
         },
         "feature_JEmjQB": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "aloe",
+            "heading": "Aloe Vera + Hyaluronic Acid",
+            "description": "Heals and hydrates sun-damaged skin"
           }
         },
         "feature_bFmTam": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "lemon",
+            "heading": "Vitamin C + Hyaluronic Acid",
+            "description": "Brightens and fights signs of aging"
           }
         },
         "feature_BJdnA6": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "honey",
+            "heading": "Honey + Hyaluronic Acid",
+            "description": "Nourishes and promotes a clear complexion"
           }
         },
         "feature_GRLjA4": {
           "type": "feature",
           "settings": {
-            "icon": "cucumber",
-            "heading": "",
-            "description": ""
+            "icon": "leaf",
+            "heading": "Eco-Friendly and Ethical",
+            "description": "Sustainably sourced, cruelty-free ingredients"
           }
         }
       },
