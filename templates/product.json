@@ -21,6 +21,11 @@
           "settings": {
           }
         },
+        "product_select_BeMMNp": {
+          "type": "product-select",
+          "settings": {
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -146,6 +151,7 @@
         "vendor",
         "title",
         "rating_wmgXDD",
+        "product_select_BeMMNp",
         "caption",
         "price",
         "variant_picker",
