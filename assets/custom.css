@@ -615,7 +615,7 @@ summary[aria-expanded='true'] .icon-collapse::after {
 
 .st-wishlist-details-button {
   position: absolute;
-  left: -50px;
+  left: -50px !important;
   top: 450px;
   transform: rotate(90deg);
   border-top-left-radius: 15px !important;
