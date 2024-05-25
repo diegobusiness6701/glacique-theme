@@ -618,49 +618,56 @@
         "faq_item_tPEYeT": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "What makes Glacique sheet masks unique?",
             "description": ""
           }
         },
         "faq_item_VHCiqB": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "Are Glacique products suitable for all skin types?",
             "description": ""
           }
         },
         "faq_item_NFLibC": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "How often should I use Glacique sheet masks?",
             "description": ""
           }
         },
         "faq_item_QN4Qpj": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "Where are Glacique products made?",
             "description": ""
           }
         },
         "faq_item_J97nUC": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "Are your products tested on animals?",
             "description": ""
           }
         },
         "faq_item_QWaPKi": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "Can I use Glacique sheet masks if I have acne-prone skin?",
             "description": ""
           }
         },
         "faq_item_4ic7Un": {
           "type": "faq-item",
           "settings": {
-            "heading": "",
+            "heading": "How should I store my sheet masks?",
+            "description": ""
+          }
+        },
+        "faq_item_4nPVxE": {
+          "type": "faq-item",
+          "settings": {
+            "heading": "What is your return policy?",
             "description": ""
           }
         }
@@ -672,7 +679,8 @@
         "faq_item_QN4Qpj",
         "faq_item_J97nUC",
         "faq_item_QWaPKi",
-        "faq_item_4ic7Un"
+        "faq_item_4ic7Un",
+        "faq_item_4nPVxE"
       ],
       "settings": {
         "title": "<strong>FAQs<\/strong>\n<br>\n<strong>Got questions?<\/strong> We have the answers!",
