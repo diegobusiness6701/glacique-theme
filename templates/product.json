@@ -127,7 +127,7 @@
           "type": "detail_tab",
           "settings": {
             "heading": "How to use",
-            "tab_content": "<div class=\"flex\">div<\/div>"
+            "tab_content": "<div class=\"flex\">div111<\/div>"
           }
         },
         "detail_tab_6UNqrj": {
