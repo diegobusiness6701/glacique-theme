@@ -184,7 +184,7 @@
               {%- when 'product_select' -%}
                 <select>
                 {%- for product_option in collections.all.products -%}
-                 <option class="" value="{{ product_option.id }}">{{ product_option.text }}</option>
+                  <option class="" value="{{ product_option.id }}"><span>{{ product_option.text }}</span></option>
                 {%- endfor -%}
                 </select>
               {%- when 'price' -%}
