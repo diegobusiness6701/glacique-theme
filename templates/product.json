@@ -26,6 +26,12 @@
           "settings": {
           }
         },
+        "seal_subscriptions_subscription_widget_4w4zLJ": {
+          "type": "shopify:\/\/apps\/seal-subscriptions\/blocks\/subscription-widget\/13b25004-a140-4ab7-b5fe-29918f759699",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -152,6 +158,7 @@
         "title",
         "rating_wmgXDD",
         "product_select_BeMMNp",
+        "seal_subscriptions_subscription_widget_4w4zLJ",
         "caption",
         "price",
         "variant_picker",
