@@ -584,6 +584,22 @@
         "background_color": "#d7f1f6"
       }
     },
+    "17166414798eb7dbe0": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_azJ6bc": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_azJ6bc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "faq_section_kEFCQX": {
       "type": "faq-section",
       "blocks": {
@@ -716,6 +732,7 @@
     "custom_product_slider_pWPqxG",
     "multicolumn",
     "how_to_use_block_Uf6FVB",
+    "17166414798eb7dbe0",
     "faq_section_kEFCQX",
     "featured_collection_9LNxcw",
     "related-products"
