@@ -65,7 +65,7 @@
             "show_gift_card_recipient": true
           }
         },
-        "swishlist_simple_wishlist_wishlist_product_button_gc8GjL": {
+        "swishlist_simple_wishlist_wishlist_product_button_PhUDDq": {
           "type": "shopify:\/\/apps\/swishlist-simple-wishlist\/blocks\/wishlist_product_button\/bfcb80f2-f00d-42ae-909a-9f00c726327b",
           "settings": {
           }
@@ -171,7 +171,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "swishlist_simple_wishlist_wishlist_product_button_gc8GjL",
+        "swishlist_simple_wishlist_wishlist_product_button_PhUDDq",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
