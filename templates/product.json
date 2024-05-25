@@ -231,31 +231,36 @@
         "slide_F6TMMx": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide1-664f29467107a.webp"
+            "image": "shopify:\/\/shop_images\/slide1-664f29467107a.webp",
+            "product": "honey-and-hyaluronic-acid-sheet-mask"
           }
         },
         "slide_RgUgNP": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide2-664f294601688.webp"
+            "image": "shopify:\/\/shop_images\/slide2-664f294601688.webp",
+            "product": "lavender-and-hyaluronic-acid-sheet-mask"
           }
         },
         "slide_WWdqL3": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide3-664f294cc1608.webp"
+            "image": "shopify:\/\/shop_images\/slide3-664f294cc1608.webp",
+            "product": "cucumber-and-hyaluronic-acid-sheet-mask"
           }
         },
         "slide_YXjbwX": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide5-664f2952ace72.webp"
+            "image": "shopify:\/\/shop_images\/slide5-664f2952ace72.webp",
+            "product": "vitamin-c-and-hyaluronic-acid-relaxing-sheet-mask"
           }
         },
         "slide_kNUYNi": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/slide4-664f2950b9313.webp"
+            "image": "shopify:\/\/shop_images\/slide4-664f2950b9313.webp",
+            "product": "aloe-vera-and-hyaluronic-acid-sheet-mask"
           }
         },
         "feature_9hjELX": {
