@@ -29,6 +29,8 @@
       .section-{{ section.id }}-padding {
         padding-top: {{ section.settings.padding_top }}px;
         padding-bottom: {{ section.settings.padding_bottom }}px;
+        background: #D7F1F6;
+
       }
     }
   {%- endstyle -%}
@@ -66,18 +68,96 @@
     >
   {%- endif -%}
 
+  <style>
+    .section-{{ section.id }}__main-padding {
+      background: #D7F1F6;
+    }
+    .product-media-gallery {
+      max-width: 750px !important;
+    }
+    .product-media-swiper {
+      /* object-fit: none !important; */
+      max-width: 750px;
+      max-height: 750px;
+      padding: 50px;
+    }
+
+    .product-media-swiper .swiper-slide img {
+      object-fit: contain !important;
+      border-radius: 45px;
+    }
+
+    .product-media-thumb-swiper {
+      max-height: 100px;
+      padding: 0 50px;
+      margin-bottom: 100px;
+    }
+    .product-media-thumb-swiper .swiper-slide {
+      width: calc(750px / 6);
+      height: calc(100% - 3px);
+    }
+
+    .product-media-thumb-swiper .swiper-slide img {
+      border-radius: 50%;
+    }
+
+    .product-media-thumb-swiper .swiper-slide {
+      border-radius: 50%;
+    }
+
+
+    .product-media-thumb-swiper .swiper-slide-thumb-active {
+      border: 1.5px solid #0E1B4D;
+    }
+    .product--{{ section.id }} {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+
+    .product__info-wrapper {
+      padding-top: 50px;
+    }
+
+    /* .product__info-wrapper {
+
+    } */
+  </style>
+
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-  <div class="page-width">
-    <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
-      <div class="grid__item product__media-wrapper">
-        {% render 'product-media-gallery', variant_images: variant_images %}
+  <div class="">
+    <div class="product product--{{ section.id }} flex">
+      <div class="product-media-gallery">
+        <div class="product-media-swiper swiper">
+          <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {%- if block.type == "image-slide" -%}
+                <div class="swiper-slide">
+                  <img src="{{ block.settings.image | image_url }}">
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="product-media-thumb-swiper swiper">
+          <div class="swiper-wrapper">
+            {%- for block in section.blocks -%}
+              {%- if block.type == "image-slide" -%}
+                <div class="swiper-slide">
+                  <img src="{{ block.settings.image | image_url }}">
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        </div>
       </div>
       <div class="product__info-wrapper grid__item{% if settings.page_width > 1400 and section.settings.media_size == "small" %} product__info-wrapper--extra-padding{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
         <product-info
           id="ProductInfo-{{ section.id }}"
           data-section="{{ section.id }}"
           data-url="{{ product.url }}"
-          class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
+          class="product__info-container"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
 
@@ -94,13 +174,19 @@
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <h1>{{ product.title | escape }}</h1>
-                  <a href="{{ product.url }}" class="product__title">
+                  <h1 class="heading" style="text-align: left; color:#0E1B4D;"><strong>Hydration</strong> sheet mask</h1>
+                  {% comment %} <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
                     </h2>
-                  </a>
+                  </a> {% endcomment %}
                 </div>
+              {%- when 'product_select' -%}
+                <select>
+                {%- for product_option in collections.all.products -%}
+                 <option class="" value="{{ product_option.id }}">{{ product_option.text }}</option>
+                {%- endfor -%}
+                </select>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
                   {%- render 'price',
@@ -648,9 +734,9 @@
             {% render 'icon-arrow' %}
           </a>
         </product-info>
-      </div>
+      </div>   
     </div>
-
+    
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
@@ -745,6 +831,33 @@
     </script>
   </div>
 </section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var swiper2 = new Swiper(".product-media-thumb-swiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+
+    var swiper = new Swiper(".product-media-swiper", {
+      loop: true,
+      spaceBetween: 50,
+      freeMode: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper2,
+      },
+    });
+
+    
+  })
+</script>
 
 {% schema %}
 {
