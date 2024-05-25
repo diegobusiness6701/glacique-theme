@@ -16,6 +16,11 @@
           "settings": {
           }
         },
+        "rating_wmgXDD": {
+          "type": "rating",
+          "settings": {
+          }
+        },
         "caption": {
           "type": "text",
           "settings": {
@@ -140,6 +145,7 @@
       "block_order": [
         "vendor",
         "title",
+        "rating_wmgXDD",
         "caption",
         "price",
         "variant_picker",
