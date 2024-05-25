@@ -123,6 +123,27 @@
             "share_label": "Share"
           }
         },
+        "detail_tab_d3Bnr4": {
+          "type": "detail_tab",
+          "settings": {
+            "heading": "How to use",
+            "content": ""
+          }
+        },
+        "detail_tab_6UNqrj": {
+          "type": "detail_tab",
+          "settings": {
+            "heading": "what to expect",
+            "content": ""
+          }
+        },
+        "detail_tab_xybB6i": {
+          "type": "detail_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "content": ""
+          }
+        },
         "image_slide_M3qHfW": {
           "type": "image-slide",
           "settings": {
@@ -178,6 +199,9 @@
         "collapsible-row-2",
         "collapsible-row-3",
         "share",
+        "detail_tab_d3Bnr4",
+        "detail_tab_6UNqrj",
+        "detail_tab_xybB6i",
         "image_slide_M3qHfW",
         "image_slide_yF6yMG",
         "image_slide_kfK74Y",
