@@ -35,7 +35,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "Revitalize your skin with our Cucumber and Hyaluronic Acid Hydration Face Sheet Mask! Infused with soothing cucumber and ultra-hydrating hyaluronic acid, it delivers a burst of moisture for a refreshed, glowing complexion. Enjoy cool, smooth, and deeply nourished skin in minutes.",
             "text_style": "subtitle"
           }
         },
