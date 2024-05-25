@@ -364,17 +364,19 @@
                       | item_count_for_variant: product.selected_or_first_available_variant.id
                     -%}
                     {% # theme-check-enable %}
-                    {% comment %} <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
-                      {{ 'products.product.quantity.label' | t }}
-                      <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}">
-                        {%- render 'loading-spinner' -%}
-                        <span
-                          >(
-                          {{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}}
-                          )</span
-                        >
-                      </span>
-                    </label> {% endcomment %}
+                    {% comment %}
+                      <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
+                        {{ 'products.product.quantity.label' | t }}
+                        <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}">
+                          {%- render 'loading-spinner' -%}
+                          <span
+                            >(
+                            {{- 'products.product.quantity.in_cart_html' | t: quantity: cart_qty -}}
+                            )</span
+                          >
+                        </span>
+                      </label>
+                    {% endcomment %}
                     <div class="price-per-item__container">
                       <quantity-input class="quantity" data-url="{{ product.url }}" data-section="{{ section.id }}">
                         <button class="quantity__button" name="minus" type="button">
@@ -783,6 +785,28 @@
             {{ 'products.product.view_full_details' | t }}
             {% render 'icon-arrow' %}
           </a>
+          {% assign detail_tabs = section.blocks | where: 'type', 'detail_tab' %}
+    <div class="tabs" >
+      {%- for block in detail_tabs -%}
+        <input
+          class="tab__input"
+          name="tabs"
+          type="radio"
+          id="tab-{{ forloop.index }}"
+          {%- if forloop.first -%}
+            checked="checked"
+          
+          {%- endif -%}
+         
+        >
+        <label class="tab__label" for="tab-{{ forloop.index }}" {%- unless forloop.first -%}style="margin-left: 10px;"{%- endunless -%}>{{ block.settings.heading }}</label>
+        <div class="tab__panel">
+          <h1>{{ block.settings.heading }}</h1>
+          <p>{{ block.settings.tab_content }}</p>
+         
+        </div>
+      {%- endfor -%}
+    </div>
         </product-info>
       </div>
     </div>
@@ -834,6 +858,8 @@
         assign seo_media = product.featured_media
       endif
     -%}
+
+    
 
     <script type="application/ld+json">
       {
@@ -1183,8 +1209,8 @@
         },
         {
           "type": "html",
-          "id": "content",
-          "label": "content"
+          "id": "tab_content",
+          "label": "Content"
         }
       ]
     },
