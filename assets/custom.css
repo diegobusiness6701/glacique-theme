@@ -590,7 +590,7 @@ summary[aria-expanded='true'] .icon-collapse::after {
   display: none;
 }
 
-#shopify-block-swishlist_simple_wishlist_wishlist_product_button_gc8GjL {
+#shopify-block-swishlist_simple_wishlist_wishlist_product_button_tbXPjL {
   display: flex;
   justify-content: end;
   margin-top: 0 !important;
@@ -611,4 +611,16 @@ summary[aria-expanded='true'] .icon-collapse::after {
 .product-grid .grid__item-first {
   background-color: var(--light-blue);
   border-radius: 45px;
+}
+
+.st-wishlist-details-button {
+  position: absolute;
+  left: -50px;
+  top: 450px;
+  transform: rotate(90deg);
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0px !important;
+  background-color: var(--dark-blue) !important;
 }
