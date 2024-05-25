@@ -165,9 +165,8 @@
 
 /* Form Elements */
 .product-form__input {
-  flex: 0 0 100%;
+  /* flex: 0 0 100%; */
   padding: 0;
-  margin: 0 0 1.2rem 0;
   max-width: 44rem;
   min-width: fit-content;
   border: none;
@@ -182,7 +181,7 @@
 }
 
 .product-form__submit {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .product-form__submit[aria-disabled='true'] + .shopify-payment-button .shopify-payment-button__button[disabled],
@@ -356,7 +355,7 @@ a.product__text {
 }
 
 .product-form__buttons {
-  max-width: 44rem;
+  /* max-width: 44rem; */
 }
 
 .product--no-media .product__info-container > modal-opener {

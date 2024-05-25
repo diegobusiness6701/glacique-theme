@@ -1,502 +1,614 @@
 :root {
-    --gray-blue: #4770DB;
-    --dark-blue: #0E1B4D;
-    --light-gray: #EFF0F5;
-    --light-blue: #D7F1F6;
-    --white: #fff;
+  --gray-blue: #4770db;
+  --dark-blue: #0e1b4d;
+  --light-gray: #eff0f5;
+  --light-blue: #d7f1f6;
+  --white: #fff;
 }
 
 /* =============================================================
 // Layout
 // ============================================================*/
 .container {
-    width: calc(100vw - 200px);
+  width: calc(100vw - 200px);
 }
 
 @media screen and (max-width: 749px) {
-    .desktop-only {
-        display: none !important;
-    }
+  .desktop-only {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: 750px) {
-    .mobile-only {
-        display: none;
-    }
+  .mobile-only {
+    display: none;
+  }
 }
 
-
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .flex-row {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .flex-row-reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .flex-column-reverse {
-    flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .w-half {
-    width: 50%;
+  width: 50%;
 }
 
 .w-full {
-    width: 100%;
+  width: 100%;
 }
 
 /* ==================================================================
 // Text
 // =================================================================*/
 .text-gray-blue {
-    color: var(--gray-blue);
+  color: var(--gray-blue);
 }
 
 .header-wrapper {
-    background: var(--dark-blue);
+  background: var(--dark-blue);
 }
 
 .header--middle-left {
-    grid-template-columns: auto 1fr auto;
-    margin: 0 auto;
+  grid-template-columns: auto 1fr auto;
+  margin: 0 auto;
 }
 
 .header--middle-left .header__inline-menu {
-    text-align: right;
+  text-align: right;
 }
 
 .header__menu-item span {
-    font-family: Sofia Pro;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    text-align: left;
-    text-decoration: none;
+  font-family: Sofia Pro;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-decoration: none;
 }
 
 .list-menu--inline {
-    gap: 50px;
+  gap: 50px;
 }
 
 /* ==============================================================
 // Custom button
 // =============================================================*/
 .btn {
-    font-family: Sofia Pro;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    border-radius: 60px;
-    padding: 14px 25px;
-    text-decoration: none;
-    text-align: center;
-
+  font-family: Sofia Pro;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  border-radius: 60px;
+  padding: 14px 25px;
+  text-decoration: none;
+  text-align: center;
 }
 
 .btn--default {
-    background-color: var(--light-gray);
-    color: var(--dark-blue);
+  background-color: var(--light-gray);
+  color: var(--dark-blue);
 }
 
 .btn--gray-blue {
-    background-color: var(--gray-blue);
-    color: var(--white);
+  background-color: var(--gray-blue);
+  color: var(--white);
 }
 
 .btn--outline {
-    border: 1.5px solid #0E1B4D;
-    background: #fff;
-    color: #0E1B4D;
+  border: 1.5px solid #0e1b4d;
+  background: #fff;
+  color: #0e1b4d;
 }
 
 /* ==============================================================
 // Custom banner
 // =============================================================*/
 .custom-banner__media {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .custom-banner--discount-wrapper {
-    font-family: Sofia Pro;
-    font-size: 65px;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.01em;
-    padding: 36px 106px 36px;
-    background-color: var(--dark-blue);
-    border-bottom-right-radius: 60px;
-    color: var(--white);
+  font-family: Sofia Pro;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  padding: 36px 106px 36px;
+  background-color: var(--dark-blue);
+  border-bottom-right-radius: 60px;
+  color: var(--white);
 }
 
 .custom-banner--review {
-    padding: 8rem 12rem;
-    gap: 3rem;
+  padding: 8rem 12rem;
+  gap: 3rem;
 }
 
 .review--clients-number {
-    font-family: Sofia Pro;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.01em;
+  font-family: Sofia Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.01em;
 }
 
 .review-rating {
-    gap: 20px;
-    align-items: center;
+  gap: 20px;
+  align-items: center;
 }
 
 .heading {
-    font-family: Sofia Pro;
-    font-size: 60px;
-    font-weight: 200;
-    line-height: 70px;
-    letter-spacing: 0.01em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    text-align: center;
+  font-family: Sofia Pro;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 70px;
+  letter-spacing: 0.01em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
 }
 
 .description {
-    font-family: Sofia Pro;
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
+  font-family: Sofia Pro;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
 }
 
 .feature-item {
-    align-items: center;
-    gap: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .feature-item_description {
-    font-family: Sofia Pro;
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 34px;
-    letter-spacing: 0.01em;
+  font-family: Sofia Pro;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 34px;
+  letter-spacing: 0.01em;
 }
 
 .custom-banner_btn {
-    padding: 1.5rem 7rem;
-    text-transform: uppercase;
-    font-weight: 800;
+  padding: 1.5rem 7rem;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 /* ========================================================
 // Brand section
 // =======================================================*/
 .brand-section {
-    align-items: center;
-    gap: 8rem;
-    padding: 10rem 8rem;
+  align-items: center;
+  gap: 8rem;
+  padding: 10rem 8rem;
 }
 
 .brand-blocks {
-    gap: 10rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .brand-blocks .brand-item {
-    align-items: center;
-    gap: 1rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .brand-blocks .brand-item span {
-    font-family: Sofia Pro;
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    text-align: center
+  font-family: Sofia Pro;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .card__inner {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .card__media .media {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .grid__item-first {
-    padding: 3.5rem !important;
-    justify-content: space-between;
-    align-items: start;
+  padding: 3.5rem !important;
+  justify-content: space-between;
+  align-items: start;
 }
 
 .grid__item-first span {
-    font-family: Sofia Pro;
-    font-size: 1.75rem;
-    font-weight: 800;
-    line-height: 41px;
-    letter-spacing: 0.01em;
-    color: #0E1B4D;
+  font-family: Sofia Pro;
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 41px;
+  letter-spacing: 0.01em;
+  color: #0e1b4d;
 }
 
 .grid__item-first .btn {
-    font-family: Sofia Pro;
-    font-size: 1.75rem;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    padding: 1rem 2.5rem;
-    text-transform: uppercase;
-    font-weight: 800;
+  font-family: Sofia Pro;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .slider-button {
-    position: absolute;
-    top: 35%;
-    background-color: #fff !important;
-    border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  background-color: #fff !important;
+  border-radius: 50%;
 }
 
 .slider-button--next {
-    right: 8rem;
+  right: 8rem;
 }
 
 .slider-button--prev {
-    left: 8rem;
+  left: 8rem;
 }
 
 .slider-button:disabled {
-    display: none;
+  display: none;
 }
 
 .card__heading {
-    font-family: Sofia Pro;
-    font-size: 2rem;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue);
 }
 
 .price-item--regular {
-    color: var(--dark-blue);
+  color: var(--dark-blue);
 }
 
 .card-product__url {
-    font-family: Sofia Pro;
-    font-size: 1.75rem;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    text-align: right;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: right;
+  color: var(--dark-blue);
 }
-
 
 /* ====================================================
 // Custom Feature Carousel
 // ===================================================*/
 .feature-slide__heading {
-    position: absolute;
-    top: 80px;
-    z-index: 10;
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  top: 80px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
 }
 
 .slide__feature-wrapper {
-    position: absolute;
-    top: 25%;
-    z-index: 10;
-    width: 100%;
-    padding-left: 12rem;
-    padding-right: 12rem;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-gap: 50px;
+  position: absolute;
+  top: 25%;
+  z-index: 10;
+  width: 100%;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 50px;
 }
 
 .slide__feature-item__heading {
-    font-family: Sofia Pro;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    color: white;
+  font-family: Sofia Pro;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: white;
 }
 
 .slide__feature-item__description {
-    font-family: Sofia Pro;
-    font-size: 24px;
-    font-weight: 200;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    color: white;
+  font-family: Sofia Pro;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: white;
 }
 
 /* =========================================================
 // Customer review carousel
 // ========================================================*/
 .review--product-image {
-    position: absolute;
-    top: -100px;
-    right: 30px;
+  position: absolute;
+  top: -100px;
+  right: 30px;
 }
 
 .review--description {
-    font-family: Sofia Pro;
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue);
 }
 
 .review--customer-name {
-    font-family: Sofia Pro;
-    font-size: 2.5rem;
-    font-weight: 800;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue);
 }
 
 .review--product-name {
-    font-family: Sofia Pro;
-    font-size: 2rem;
-    font-weight: 200;
-    line-height: 25px;
-    letter-spacing: 0.01em;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue);
 }
 
 .review--product-link {
-    font-family: Sofia Pro;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue);
 }
 
 .review-slide {
-    background: #D7F1F6;
-    padding: 3rem !important;
-    border-radius: 30px;
-    margin-top: 100px;
+  background: #d7f1f6;
+  padding: 3rem !important;
+  border-radius: 30px;
+  margin-top: 100px;
 }
 
 .review-slider .grid__item-first {
-    background-color: var(--dark-blue);
-    border-radius: 30px;
-    margin-top: 100px;
+  background-color: var(--dark-blue);
+  border-radius: 30px;
+  margin-top: 100px;
 }
 
 /* ====================================================================
 // FAQ title
 // ===================================================================*/
 .accordion {
-    border: none !important;
-    /* border-radius: 30px;
+  border: none !important;
+  /* border-radius: 30px;
     background-color: #fff;
     padding: 2.5rem;
     margin-bottom: 1.5rem !important; */
 }
 
 .faq__title {
-    border-radius: 30px;
-    background-color: #fff;
-    padding: 4rem 3rem !important;
-    margin-bottom: 1.5rem !important;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 4rem 3rem !important;
+  margin-bottom: 1.5rem !important;
 }
 
 .accordion__title {
-    font-family: Sofia Pro;
-    font-size: 3rem;
-    font-weight: 600;
-    line-height: 32px;
-    color: var(--dark-blue);
+  font-family: Sofia Pro;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--dark-blue);
 }
 
 .accordion__content {
-    font-family: Sofia Pro;
-    font-size: 2.5rem;
-    font-weight: 200;
-    line-height: 41px;
-    text-align: justified;
-    color: var(--dark-blue);
-    padding-left: 4rem !important;
-
+  font-family: Sofia Pro;
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 41px;
+  text-align: justified;
+  color: var(--dark-blue);
+  padding-left: 4rem !important;
 }
 
 .icon-collapse {
-    position: absolute;
-    right: 30px;
+  position: absolute;
+  right: 30px;
 }
 
 .icon-collapse::before {
-    content: " ";
-    width: 20px;
-    height: 1.5px;
-    background-color: var(--dark-blue);
-    display: inline-block;
+  content: ' ';
+  width: 20px;
+  height: 1.5px;
+  background-color: var(--dark-blue);
+  display: inline-block;
 }
 
 .icon-collapse::after {
-    content: " ";
-    width: 1.5px;
-    height: 20px;
-    background-color: var(--dark-blue);
-    display: inline-block;
-    position: relative;
-    right: 11px;
-    top: 10px;
-    transition: all .3s;
+  content: ' ';
+  width: 1.5px;
+  height: 20px;
+  background-color: var(--dark-blue);
+  display: inline-block;
+  position: relative;
+  right: 11px;
+  top: 10px;
+  transition: all 0.3s;
 }
 
-summary[aria-expanded=true] .icon-collapse::after {
-    transform: rotate(-90deg);
+summary[aria-expanded='true'] .icon-collapse::after {
+  transform: rotate(-90deg);
 }
 
 .multicolumn-card__info .inline-richtext {
-    font-family: Sofia Pro;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #4770DB;
+  font-family: Sofia Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #4770db;
 }
 
 .footer-block__heading {
-    font-family: Sofia Pro;
-    font-size: 2.5rem !important;
-    font-weight: 600;
-    line-height: 32px;
-    color: #fff;
+  font-family: Sofia Pro;
+  font-size: 2.5rem !important;
+  font-weight: 600;
+  line-height: 32px;
+  color: #fff;
 }
 
 .footer-block__details-content,
 .footer-block__details-content li .link--text {
-    font-family: Sofia Pro;
-    font-size: 2rem;
-    font-weight: 200;
-    line-height: 44.4px;
-    color: #fff;
+  font-family: Sofia Pro;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 44.4px;
+  color: #fff;
 }
 
 .multicolumn-card__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ==========================================================
+// Dropdown
+// =========================================================*/
+.dropbtn {
+  background-color: #fff;
+  border-radius: 60px;
+  font-family: Sofia Pro;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  border: none;
+  padding: 15px 20px 20px;
+  color: var(--dark-blue);
+}
+
+/* Dropdown button on hover & focus */
+/* .dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+} */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  width: calc(100% - 10px);
+  left: 5px;
+  top: calc(100% - 15px);
+  z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: Sofia Pro;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  color: var(--dark-blue);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display: block;
+}
+
+.product__text {
+  font-family: Sofia Pro;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--dark-blue);
+}
+
+.product-form__buttons button {
+  background-color: var(--dark-blue);
+  border-radius: 60px;
+  font-family: Sofia Pro;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: var(--white);
+  text-transform: uppercase;
+  padding: 11px 105px;
+}
+
+.product-form__buttons button::after {
+  display: none;
+}
+
+#shopify-block-swishlist_simple_wishlist_wishlist_product_button_gc8GjL {
+  display: flex;
+  justify-content: end;
+  margin-top: 0 !important;
+}
+
+.st-wishlist-initialized .st-wishlist-button {
+  border: none !important;
+  background: none !important;
+  color: var(--dark-blue) !important;
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.product-grid .grid__item-first {
+  background-color: var(--light-blue);
+  border-radius: 45px;
 }
