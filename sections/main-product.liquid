@@ -181,7 +181,7 @@
                     </h2>
                   </a> {% endcomment %}
                 </div>
-              {%- when 'product_select' -%}
+              {%- when 'product-select' -%}
                 <select>
                 {%- for product_option in collections.all.products -%}
                   <option class="" value="{{ product_option.id }}"><span>{{ product_option.text }}</span></option>
@@ -878,6 +878,10 @@
           "label": "Image"
         }
       ]
+    },
+    {
+      "type": "product-select",
+      "name": "Product Select"
     },
     {
       "type": "text",
