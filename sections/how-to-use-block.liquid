@@ -15,6 +15,16 @@
   #section-{{ section.id }} .how-to-step--item {
     max-width: 462px;
   }
+
+  @media screen and (max-width: 749px) {
+    #section-{{ section.id }} {
+      padding: 5rem 2rem;
+    }
+    #section-{{ section.id }} .how-to-user-block {
+      padding: 1rem;
+      flex-direction: column;
+    }
+  }
 </style>
 
 <div id="section-{{ section.id }}" class="section" style="padding: ">
