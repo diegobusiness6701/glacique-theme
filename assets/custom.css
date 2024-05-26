@@ -670,8 +670,9 @@ summary[aria-expanded='true'] .icon-collapse::after {
   color: #000;
 }
 @media (min-width: 600px) {
-  .tab__label:not(:first-child) {
-    width: calc((100% - (var(--tab-counts) - 1) * 10px) / var(--tab-counts));
+  .tab__label {
+    min-width: calc((100% - (var(--tab-counts) - 1) * 10px) / var(--tab-counts));
+    max-width: calc((100% - (var(--tab-counts) - 1) * 10px) / var(--tab-counts));
   }
 }
 .tab__panel {
@@ -685,6 +686,7 @@ summary[aria-expanded='true'] .icon-collapse::after {
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--dark-blue);
+  width: 100%;
 }
 @media (min-width: 600px) {
   .tab__panel {
