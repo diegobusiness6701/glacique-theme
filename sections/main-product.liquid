@@ -143,6 +143,10 @@
         /* .product__info-wrapper {
 
         } */
+
+        .features-swiper .swiper-pagination {
+          bottom: 200px !important;
+        }
   </style>
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
@@ -229,7 +233,7 @@
                     </a>
                     <div id="myDropdown" class="dropdown-content">
                       {%- for product_option in collections.all.products -%}
-                        <a href="#" value="{{ product_option.id }}">
+                        <a href="{{ product_option.url }}" value="{{ product_option.id }}">
                           <svg
                             width="22"
                             height="22"
@@ -253,7 +257,7 @@
                     </a>
                     <div id="packdropdown" class="dropdown-content">
                       {%- for variant in product.variants -%}
-                        <a href="#" value="{{ variant.id }}">
+                        <a href="{{ variant.url }}" value="{{ variant.id }}">
                           {{ variant.title }}
                         </a>
                       {%- endfor -%}

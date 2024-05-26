@@ -30,7 +30,10 @@
   <div class="swiper-wrapper desktop-only">
     {%- for block in section.blocks -%}
       {%- if block.type == 'slide' -%}
-        <div class="swiper-slide"><img src="{{ block.settings.image | image_url }}"></div>
+        <div class="swiper-slide">
+          <img src="{{ block.settings.image | image_url }}">
+      {%- if block.settings.product != blank -%}<a href="{{ block.settings.product }}">SHOP NOW</a>{%- endif -%}
+          </div>
       {%- endif -%}
     {%- endfor -%}
   </div>
@@ -77,6 +80,7 @@
             <span class="slide__feature-item__heading">{{ block.settings.heading }}</span>
             <span class="slide__feature-item__description">{{ block.settings.description }}</span>
           </div>
+          
         </div>
       {%- endif -%}
     {%- endfor -%}
@@ -159,6 +163,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
         }
       ]
     },
